@@ -8,6 +8,16 @@ export const FeatureGrid = styled.div`
   @media (min-width: 900px) {
     grid-template-columns: ${(props) => (props.$singleColumn ? '1fr' : '0.85fr 1.15fr')};
   }
+
+  /* Reversed sections put the lifestyle collage (Main) before the product
+     card (Aside) in visual order — stacked on top on mobile, swapped to the
+     left column on desktop. */
+  ${(props) =>
+    props.$reverseOrder &&
+    `
+    > *:first-child { order: 2; }
+    > *:last-child { order: 1; }
+  `}
 `;
 
 export const SplitRow = styled.div`
@@ -72,9 +82,10 @@ export const CollageImg = styled.img`
   display: block;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   min-width: 0;
   object-fit: cover;
+  object-position: top;
   border-radius: var(--radius-lg);
   ${(props) => props.$offset && 'margin-top: var(--space-4);'}
 `;

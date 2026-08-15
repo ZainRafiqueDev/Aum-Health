@@ -14,7 +14,6 @@ export const nav = {
     { label: 'Peptides & Longevity', href: '#peptides' },
     { label: "Women's Health", href: '#womens-health' },
     { label: 'Hair Regrowth', href: '#hair' },
-    { label: 'Skincare', href: '#skincare' },
     { label: 'Testimonials', href: '#testimonials' },
   ],
   popupFooterLinks: [
@@ -146,8 +145,6 @@ export const sexualHealthSection = {
   tint: 'sexual-health',
   eyebrow: 'Care for Confidence & Intimacy',
   headingParts: ['Sexual health support, built around ', { highlight: 'you and your partner' }],
-  productImage: '/assets/products/sex1.jpg',
-  imagePlaceholder: true, 
   checklistCaption: 'Benefits that make a difference',
   checklist: [
     'Doctor-prescribed treatment options',
@@ -212,8 +209,6 @@ export const womensHealthSection = {
   tint: 'womens-health',
   eyebrow: "Care Designed for Women's Health",
   headingParts: ['Whole-body ', { highlight: 'care for her' }, ' balance, vitality, and confidence'],
-  productImage: '/assets/products/WomensHealth.webp',
-  imagePlaceholder: true, 
   checklistCaption: 'Benefits that support every stage',
   checklist: [
     'Hormone balance',

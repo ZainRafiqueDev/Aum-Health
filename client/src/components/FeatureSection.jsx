@@ -17,6 +17,7 @@ export default function FeatureSection({
   id,
   tint,
   dark,
+  reverseOrder,
   eyebrow,
   headingParts,
   productImage,
@@ -61,7 +62,7 @@ export default function FeatureSection({
   return (
     <TintedSection id={id} $tint={tint} $dark={dark}>
       <Container>
-        <FeatureGrid $singleColumn={!hasProduct}>
+        <FeatureGrid $singleColumn={!hasProduct} $reverseOrder={reverseOrder && hasProduct}>
           {hasProduct && (
             <Aside>
               <ZoomIn>

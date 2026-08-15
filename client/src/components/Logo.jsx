@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 import { brand } from '../content/site-content.js';
-import InfinityMark from './InfinityMark.jsx';
 
 const LogoWrap = styled.span`
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   line-height: 1;
+`;
+
+const LogoImg = styled.img`
+  display: block;
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex: 0 0 auto;
 `;
 
 const Wordmark = styled.span`
@@ -27,15 +35,10 @@ const HealthWord = styled.span`
   font-weight: 400;
 `;
 
-
 export default function Logo({ light = false }) {
   return (
     <LogoWrap aria-label={brand.name}>
-      <InfinityMark
-        color={light ? 'var(--color-gold-accent)' : 'var(--color-navy-800)'}
-        glow={light ? '#fff6e6' : '#ffffff'}
-        size={26}
-      />
+      <LogoImg src="/assets/logo/logo.jpeg" alt="" />
       <Wordmark>
         <Aum $light={light}>AUM</Aum>
         <HealthWord $light={light}>health</HealthWord>

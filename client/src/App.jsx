@@ -14,7 +14,6 @@ import {
   peptidesSection,
   womensHealthSection,
   hairSection,
-  skincareSection,
 } from './content/site-content.js';
 
 export default function App() {
@@ -25,14 +24,14 @@ export default function App() {
         <Hero />
         <BadgeStrip />
         <GlpSection />
-        <FeatureSection {...supplementSection} />
+        <FeatureSection {...supplementSection} reverseOrder />
         <SupplementBanner />
         <FeatureSection {...sexualHealthSection} />
         <FeatureSection {...mensHealthSection} />
         <FeatureSection {...peptidesSection} />
         <FeatureSection {...womensHealthSection} />
         <FeatureSection {...hairSection} />
-        <FeatureSection {...skincareSection} />
+        {/* Skincare section temporarily removed per client request */}
         <TestimonialsSection />
         <GuaranteeStrip />
       </main>
