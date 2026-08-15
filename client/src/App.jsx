@@ -11,6 +11,7 @@ import {
   supplementSection,
   sexualHealthSection,
   mensHealthSection,
+  peptidesSection,
   womensHealthSection,
   hairSection,
   skincareSection,
@@ -28,6 +29,7 @@ export default function App() {
         <SupplementBanner />
         <FeatureSection {...sexualHealthSection} />
         <FeatureSection {...mensHealthSection} />
+        <FeatureSection {...peptidesSection} />
         <FeatureSection {...womensHealthSection} />
         <FeatureSection {...hairSection} />
         <FeatureSection {...skincareSection} />

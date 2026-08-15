@@ -60,6 +60,8 @@ const GlobalStyle = createGlobalStyle`
     --tint-womens-health-accent: #c4708f;
     --tint-skincare: #eaf3f0;
     --tint-skincare-accent: #4a9d8f;
+    --tint-peptides: #eceffb;
+    --tint-peptides-accent: #6b7fd7;
   }
 
   * {

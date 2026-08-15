@@ -11,6 +11,7 @@ export const nav = {
     { label: 'Supplements', href: '#supplements' },
     { label: 'Sexual Health', href: '#sexual-health' },
     { label: "Men's Health", href: '#mens-health' },
+    { label: 'Peptides & Longevity', href: '#peptides' },
     { label: "Women's Health", href: '#womens-health' },
     { label: 'Hair Regrowth', href: '#hair' },
     { label: 'Skincare', href: '#skincare' },
@@ -34,7 +35,7 @@ export const hero = {
       label: 'Weight Loss',
       style: 'product',
       tint: '#e3f2e8',
-      image: '/src/assets/products/weightloss1.avif',
+      image: '/assets/products/weightloss1.avif',
     },
     {
       key: 'sexual-health',
@@ -42,7 +43,7 @@ export const hero = {
       label: 'Sexual Health',
       style: 'product',
       tint: '#e6edf5',
-      image: '/src/assets/products/sex1.jpg',
+      image: '/assets/products/sex1.jpg',
     },
     {
       key: 'mens-health',
@@ -76,7 +77,7 @@ export const glpSection = {
   id: 'weight-loss',
   eyebrow: 'Doctor-Guided GLP-1 Care',
   headingParts: ['Weight loss ', { highlight: 'made easy' }, ' with personalized care'],
-  productImage: '/src/assets/products/weightloss.avif', // PLACEHOLDER: GLP medication product photo
+  productImage: '/assets/weightlosssection/weight-loss-vial.jpeg',
   checklistCaption: 'Everything you need  included:',
   checklist: [
     'Prescription to fast, effective GLP-1',
@@ -86,8 +87,8 @@ export const glpSection = {
     'Fast & discreet shipping',
   ],
   collageImages: [
-    { src: '/src/assets/hero/weight-loss-market.jpg', alt: 'AUM Health weight loss patients enjoying a healthier lifestyle' },
-    { src: '/src/assets/hero/wellness-beach-yoga.jpg', alt: 'AUM Health patients staying active' },
+    { src: '/assets/weightlosssection/weight-loss-1.jpeg', alt: 'AUM Health weight loss patient staying active at home' },
+    { src: '/assets/weightlosssection/weight-loss-2.jpeg', alt: 'AUM Health weight loss patient living life on the go' },
   ],
   secondaryHeading: 'A smarter approach to weight loss, built around you',
   secondaryBody:
@@ -97,7 +98,7 @@ export const glpSection = {
     {
       title: 'Everything, all in one place',
       body: 'Track your progress, check in with your provider, and manage your care in your all-in-one patient portal.',
-      image: '/src/assets/glp/portal-app-photo.svg',
+      image: '/assets/glp/portal-app-photo.svg',
     },
     {
       title: 'Unlimited 24/7 support',
@@ -114,8 +115,7 @@ export const supplementSection = {
   tint: 'supplements',
   eyebrow: 'Purpose-Driven Supplementation',
   headingParts: ['Supplements with the ', { highlight: 'power to boost' }, ' real results'],
-  productImage: 'src/assets/products/supplemmts.avif',
-  imagePlaceholder: true, 
+  productImage: '/assets/supplementsection/supplements-family.jpeg',
   checklistCaption: 'What better support looks like',
   checklist: [
     'Clean, transparent ingredients',
@@ -125,8 +125,8 @@ export const supplementSection = {
     'High-quality sourcing',
   ],
   collageImages: [
-    { src: 'https://images.unsplash.com/photo-1611077094733-db54f4445a4e?q=80&w=400&auto=format&fit=crop', alt: 'AUM Health supplement lifestyle photo' },
-    { src: 'https://images.unsplash.com/photo-1548966268-b978ed7b2e83?q=80&w=400&auto=format&fit=crop', alt: 'AUM Health supplement lifestyle photo' },
+    { src: '/assets/supplementsection/supplements-1.jpeg', alt: 'AUM Health supplement patient lifestyle photo' },
+    { src: '/assets/supplementsection/supplements-2.jpeg', alt: 'AUM Health supplement patient lifestyle photo' },
   ],
   secondaryHeading: 'Support that helps you feel better over time',
   secondaryBody:
@@ -137,8 +137,7 @@ export const supplementSection = {
 
 
 export const supplementBanner = {
-  image: 'src/assets/products/supp1.avif',
-  imagePlaceholder: true, 
+  image: '/assets/supplementsection/supplements-family.jpeg',
   tagline: 'Doctor-formulated blends, built to support how your body works every single day.',
 };
 
@@ -147,7 +146,7 @@ export const sexualHealthSection = {
   tint: 'sexual-health',
   eyebrow: 'Care for Confidence & Intimacy',
   headingParts: ['Sexual health support, built around ', { highlight: 'you and your partner' }],
-  productImage: '/src/assets/products/sex1.jpg',
+  productImage: '/assets/products/sex1.jpg',
   imagePlaceholder: true, 
   checklistCaption: 'Benefits that make a difference',
   checklist: [
@@ -176,12 +175,35 @@ export const mensHealthSection = {
   checklistCaption: 'Benefits that make a difference',
   checklist: ['Physical performance', 'Hormone balance', 'Energy levels', 'Mental focus', 'Fast & discreet shipping'],
   collageImages: [
-    { src: 'https://images.unsplash.com/photo-1599242460737-5174dba06145?q=80&w=400&auto=format&fit=crop', alt: "AUM Health men's health lifestyle photo" },
-    { src: 'https://images.unsplash.com/photo-1754476262602-18e3abf04d60?q=80&w=400&auto=format&fit=crop', alt: "AUM Health men's health lifestyle photo" },
+    { src: '/assets/menhealth/mens-health-1.jpeg', alt: "AUM Health men's health lifestyle photo" },
+    { src: '/assets/menhealth/mens-health-2.jpeg', alt: "AUM Health men's health lifestyle photo" },
   ],
   secondaryHeading: 'Care designed to help you feel stronger, sharper, and more in control',
   secondaryBody:
     'Doctor-guided care for hormones, energy, and performance, with treatment plans tailored to your goals and adjusted as your body responds.',
+  cta: { label: 'Get Started', href: '#get-started' },
+};
+
+export const peptidesSection = {
+  id: 'peptides',
+  tint: 'peptides',
+  eyebrow: 'Advanced Peptide & Longevity Support',
+  headingParts: ['Peptide therapy for ', { highlight: 'recovery, performance & longevity' }],
+  checklistCaption: 'Benefits that make a difference',
+  checklist: [
+    'Doctor-guided peptide protocols',
+    'Support for recovery & performance',
+    'Cellular health & healthy aging',
+    'Personalized dosing plans',
+    'Fast & discreet shipping',
+  ],
+  collageImages: [
+    { src: '/assets/peptides/peptides-1.jpeg', alt: 'AUM Health peptide therapy patient staying active' },
+    { src: '/assets/peptides/peptides-2.jpeg', alt: 'AUM Health peptide therapy community group workout' },
+  ],
+  secondaryHeading: 'Science-backed support for how you recover and age',
+  secondaryBody:
+    'Doctor-guided peptide protocols designed to support recovery, performance, and long-term cellular health, personalized to your goals.',
   cta: { label: 'Get Started', href: '#get-started' },
 };
 
@@ -190,7 +212,7 @@ export const womensHealthSection = {
   tint: 'womens-health',
   eyebrow: "Care Designed for Women's Health",
   headingParts: ['Whole-body ', { highlight: 'care for her' }, ' balance, vitality, and confidence'],
-  productImage: '/src/assets/products/WomensHealth.webp',
+  productImage: '/assets/products/WomensHealth.webp',
   imagePlaceholder: true, 
   checklistCaption: 'Benefits that support every stage',
   checklist: [
@@ -215,7 +237,7 @@ export const hairSection = {
   tint: 'hair',
   eyebrow: 'Targeted Hair Restoration',
   headingParts: [{ highlight: 'Proven care' }, ' for thinning hair and regrowth'],
-  productImage: '/src/assets/products/hairserum.webp',
+  productImage: '/assets/products/hairserum.webp',
   checklistCaption: 'Personalized Support for Lasting Hair Results',
   checklist: [
     'Clinically backed regrowth ingredients',
@@ -238,7 +260,7 @@ export const skincareSection = {
   tint: 'skincare',
   eyebrow: 'Care for Healthier, Clearer Skin',
   headingParts: ['Personalized care for ', { highlight: 'healthier, clearer skin' }],
-  productImage: '/src/assets/products/skincare.jpg',
+  productImage: '/assets/products/skincare.jpg',
   imagePlaceholder: true, 
   checklistCaption: 'Benefits that make a difference',
   checklist: [
@@ -265,7 +287,7 @@ export const coachingSection = {
   heading: 'Modern healthcare, built around you',
   headingHighlight: 'built around you',
   badge: 'With you from start to success',
-  photo: '/src/assets/doctors/doctor-2.svg', 
+  photo: '/assets/doctors/doctor-2.svg', 
   cardHeading: 'Care coaching and nutrition support',
   body: "Our care coaching team, led by certified medical assistants and registered dietitians, helps answer questions about your medication, program, and day-to-day lifestyle changes — so you have the guidance you need to stay on track and see results.",
   closingLine: "We're creating a better healthcare experience, and the details matter",
@@ -279,9 +301,9 @@ export const doctorsSection = {
   body: 'Every AUM Health treatment plan is reviewed and prescribed by an independent, state-licensed provider through our clinical partner network — the same doctor-led model used across telehealth.',
   isPlaceholderContent: true,
   doctors: [
-    { name: 'Provider bio pending', credential: 'Licensed Physician', photo: '/src/assets/doctors/doctor-1.svg' },
-    { name: 'Provider bio pending', credential: 'Licensed Nurse Practitioner', photo: '/src/assets/doctors/doctor-2.svg' },
-    { name: 'Provider bio pending', credential: 'Licensed Physician', photo: '/src/assets/doctors/doctor-3.svg' },
+    { name: 'Provider bio pending', credential: 'Licensed Physician', photo: '/assets/doctors/doctor-1.svg' },
+    { name: 'Provider bio pending', credential: 'Licensed Nurse Practitioner', photo: '/assets/doctors/doctor-2.svg' },
+    { name: 'Provider bio pending', credential: 'Licensed Physician', photo: '/assets/doctors/doctor-3.svg' },
   ],
 };
 
