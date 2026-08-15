@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="340" viewBox="0 0 700 340">
+  <rect width="700" height="340" fill="none"/>
+  <!-- back jar left -->
+  <g opacity="0.55">
+    <rect x="60" y="70" width="150" height="220" rx="14" fill="#8b6fc9" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 6"/>
+    <rect x="60" y="70" width="150" height="34" rx="14" fill="#ffffff" fill-opacity="0.35"/>
+  </g>
+  <!-- back jar right -->
+  <g opacity="0.55">
+    <rect x="490" y="70" width="150" height="220" rx="14" fill="#8b6fc9" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 6"/>
+    <rect x="490" y="70" width="150" height="34" rx="14" fill="#ffffff" fill-opacity="0.35"/>
+  </g>
+  <!-- front jar center -->
+  <rect x="270" y="30" width="170" height="270" rx="16" fill="#7a5db5" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="10 7"/>
+  <rect x="270" y="30" width="170" height="40" rx="16" fill="#ffffff" fill-opacity="0.4"/>
+  <text x="355" y="180" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#ffffff">SUPPLEMENT</text>
+  <text x="355" y="202" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#ffffff">PRODUCT</text>
+  <text x="355" y="224" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#ffffff">PHOTO</text>
+</svg>
