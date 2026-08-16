@@ -34,13 +34,13 @@ const CropLayer = styled.span`
 `;
 
 // Recolored via CSS mask (using the source PNG's alpha channel as a stencil)
-// rather than a color filter, so the mark renders as an exact solid gold
+// rather than a color filter, so the mark renders as a bright gold gradient
 // regardless of the source image's baked-in colors.
 const LogoMark = styled.span`
   display: block;
   width: ${CONTENT.w}px;
   height: ${CONTENT.h}px;
-  background-color: var(--color-gold-accent);
+  background: linear-gradient(135deg, #f8dfa0 0%, #e0ac52 45%, #f4d488 75%, #dba84f 100%);
   -webkit-mask-image: url('/assets/logo/logo1.png');
   mask-image: url('/assets/logo/logo1.png');
   -webkit-mask-repeat: no-repeat;
@@ -49,6 +49,32 @@ const LogoMark = styled.span`
   mask-position: -${CONTENT.x}px -${CONTENT.y}px;
   -webkit-mask-size: ${NATURAL.w}px ${NATURAL.h}px;
   mask-size: ${NATURAL.w}px ${NATURAL.h}px;
+`;
+
+// The soft light glowing from the center crossing-point of the infinity mark.
+const LogoGlow = styled.span`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, #fff1cf 35%, rgba(250, 214, 140, 0.7) 60%, transparent 78%);
+  box-shadow: 0 0 10px 3px rgba(255, 214, 140, 0.55), 0 0 20px 8px rgba(255, 197, 110, 0.25);
+  pointer-events: none;
+  animation: aum-logo-glow-pulse 3.2s ease-in-out infinite;
+
+  @keyframes aum-logo-glow-pulse {
+    0%, 100% {
+      opacity: 0.85;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  }
 `;
 
 const LogoWrap = styled.span`
@@ -82,6 +108,7 @@ export default function Logo({ light = false }) {
       <LogoFrame>
         <CropLayer>
           <LogoMark />
+          <LogoGlow />
         </CropLayer>
       </LogoFrame>
       <Wordmark>
