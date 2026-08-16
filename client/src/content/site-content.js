@@ -366,6 +366,7 @@ export const footer = {
     { label: 'Privacy Practices', href: '/privacy-practices' },
     { label: 'Refund Policy', href: '/refund-policy' },
     { label: 'Medical Consent', href: '/medical-consent' },
+    { label: 'Telehealth Consent', href: '/telehealth-consent' },
     { label: 'For California Residents', href: '/california-residents' },
     { label: 'Bill of Rights', href: '/bill-of-rights' },
   ],

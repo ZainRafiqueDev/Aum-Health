@@ -792,6 +792,183 @@ export const billOfRightsContent = {
   ],
 };
 
+export const telehealthConsentContent = {
+  id: 'telehealth-consent',
+  title: 'Telehealth Informed Consent',
+  lastUpdated: 'August 16, 2026',
+  intro: [
+    'This Telehealth Informed Consent ("Consent") explains the nature of telehealth services that may be made accessible through the AUMhealth™ platform. AUMhealth is a brand owned and operated by QH Token, Inc., a Wyoming corporation. QH Token, Inc. and AUMhealth are not themselves medical practices, healthcare providers, or pharmacies.',
+    'By proceeding with a telehealth encounter and affirmatively accepting this Consent, you acknowledge that you have read and understand the information below and consent to receiving healthcare services through telehealth, subject to applicable law and any additional consent required by your treating healthcare provider.',
+  ],
+  sections: [
+    {
+      heading: '1. What Is Telehealth?',
+      paragraphs: [
+        'Telehealth is the delivery of healthcare services using electronic communications and information technology when a patient and healthcare professional are not in the same physical location. Telehealth may include synchronous video or telephone encounters, asynchronous medical questionnaires, secure messaging, photographs, electronic medical records, laboratory information, remote monitoring information, and other technologies permitted by applicable law.',
+      ],
+    },
+    {
+      heading: '2. Role of AUMhealth™ and QH Token, Inc.',
+      paragraphs: [
+        'AUMhealth provides technology and non-clinical services that may facilitate access to independent licensed healthcare professionals and/or professional medical entities. Medical diagnosis, prescribing, treatment recommendations, and other clinical decisions are made solely by the licensed healthcare professional responsible for your care.',
+        'Your healthcare professional may determine that telehealth is not appropriate for your condition or that additional information, laboratory testing, diagnostic testing, or an in-person examination is required before treatment can be provided or continued.',
+      ],
+    },
+    {
+      heading: '3. Services That May Be Provided',
+      paragraphs: [
+        "Depending on availability, your location, clinical eligibility, and applicable law, telehealth services accessible through AUMhealth may relate to weight management and weight loss, men's health, peptides and longevity-focused healthcare, hair health, prescription medications, laboratory testing, follow-up care, and related healthcare services.",
+        'Availability of a program on the AUMhealth Platform does not mean that the program or any particular medication is appropriate for you.',
+      ],
+    },
+    {
+      heading: '4. Patient Location and Provider Licensure',
+      paragraphs: [
+        'You agree to accurately disclose your physical location at the time healthcare services are provided. Telehealth providers generally must be appropriately licensed or otherwise authorized to provide care in the jurisdiction where the patient is physically located.',
+        'If you move or travel to another state, treatment availability or your ability to continue receiving care from a particular provider may change.',
+      ],
+    },
+    {
+      heading: '5. Benefits of Telehealth',
+      paragraphs: [
+        'Potential benefits of telehealth include convenient access to healthcare professionals, reduced travel, timely communication, remote follow-up, electronic exchange of relevant health information, and increased access to certain healthcare services.',
+        'These potential benefits are not guaranteed and telehealth may not be appropriate for every patient or medical condition.',
+      ],
+    },
+    {
+      heading: '6. Risks and Limitations of Telehealth',
+      paragraphs: [
+        'Telehealth has limitations and risks. These may include the inability to perform a complete physical examination; limitations in visual, audio, or other information available to the provider; technology failures or interruptions; delays in evaluation or treatment; incomplete or inaccurate information supplied by the patient; privacy or security risks inherent in electronic communications; and the possibility that an in-person examination or additional testing may be necessary.',
+        'A healthcare professional may make a clinical decision based substantially on information you provide. Incomplete, inaccurate, or misleading information may create significant medical risks.',
+      ],
+    },
+    {
+      heading: '7. Technology and Communication Failures',
+      paragraphs: [
+        'Telehealth depends on technology that may fail, become unavailable, or experience interruptions. If a telehealth encounter cannot be completed because of a technical problem, the provider or AUMhealth may attempt to reconnect, use another permitted communication method, or reschedule the encounter.',
+        'You understand that electronic communication cannot be guaranteed to be completely secure or uninterrupted.',
+      ],
+    },
+    {
+      heading: '8. Privacy and Confidentiality',
+      paragraphs: [
+        "Reasonable safeguards will be used to protect information transmitted in connection with telehealth, subject to the legal responsibilities of the entities involved. Healthcare providers and other HIPAA covered entities may be subject to HIPAA and other healthcare privacy requirements. QH Token, Inc.'s processing of information is also governed by the applicable AUMhealth Privacy Policy and contractual obligations.",
+        'You should participate in telehealth encounters from a private location whenever possible and take reasonable steps to prevent unauthorized people from viewing or hearing your healthcare communications.',
+      ],
+    },
+    {
+      heading: '9. Prescription Medications',
+      paragraphs: [
+        'A telehealth encounter does not guarantee a prescription. A licensed healthcare professional will independently determine whether medication is medically appropriate and legally permissible. The provider may decline a requested medication, recommend a different treatment, request laboratory testing, require an in-person examination, or refer you to another healthcare professional.',
+        'Prescription availability may also depend on federal and state law, pharmacy availability, your location, medication type, and other regulatory requirements.',
+      ],
+    },
+    {
+      heading: '10. Compounded and Off-Label Treatments',
+      paragraphs: [
+        "Depending on the program and provider's independent clinical judgment, treatment discussions may involve FDA-approved medications, compounded medications, or FDA-approved medications prescribed for an off-label use where lawful and medically appropriate.",
+        'Compounded drugs are not FDA-approved, and FDA does not review compounded drugs for safety, effectiveness, or quality before they are marketed. A provider should discuss material treatment-specific considerations with you as appropriate before prescribing.',
+      ],
+    },
+    {
+      heading: '11. Peptides and Longevity-Focused Treatments',
+      paragraphs: [
+        'The clinical and regulatory status of peptides and longevity-focused therapies varies. A discussion of a therapy through AUMhealth does not establish that it is FDA-approved, legally available, or medically appropriate for you. Your provider is responsible for determining what treatments may lawfully and appropriately be offered.',
+      ],
+    },
+    {
+      heading: '12. Laboratory and Diagnostic Testing',
+      paragraphs: [
+        'Your provider may determine that laboratory or other diagnostic testing is necessary before initiating or continuing treatment. Failure to complete required testing may result in treatment being delayed, modified, or discontinued.',
+      ],
+    },
+    {
+      heading: '13. Your Responsibilities',
+      paragraphs: [
+        'You agree to provide complete and accurate information concerning your identity, physical location, medical history, medications, allergies, symptoms, diagnoses, laboratory results, pregnancy status where clinically relevant, adverse reactions, and other information requested by your healthcare professional.',
+        'You agree to follow treatment instructions, review medication information, ask questions when instructions are unclear, promptly report significant adverse effects, and seek appropriate in-person or emergency care when instructed or when circumstances reasonably require it.',
+      ],
+    },
+    {
+      heading: '14. Emergencies and Urgent Conditions',
+      paragraphs: [
+        'TELEHEALTH SERVICES THROUGH AUMHEALTH ARE NOT A SUBSTITUTE FOR EMERGENCY MEDICAL SERVICES. The AUMhealth Platform should not be used for emergencies or conditions requiring immediate medical attention.',
+        'If you believe you are experiencing a medical emergency, seek immediate emergency medical assistance. Do not wait for a response through the AUMhealth Platform.',
+      ],
+    },
+    {
+      heading: '15. Alternative Forms of Care',
+      paragraphs: [
+        'You may choose to seek care through an in-person healthcare professional rather than through telehealth. Your telehealth provider may also recommend or require in-person care when clinically appropriate. You may obtain a second opinion or seek care from another qualified healthcare professional, subject to applicable law and your own healthcare arrangements.',
+      ],
+    },
+    {
+      heading: '16. Right to Withdraw Consent',
+      paragraphs: [
+        'Subject to applicable law, you may withdraw your consent to future telehealth services. Withdrawal will not affect the legality of healthcare services already provided or actions already taken in reliance on your prior consent.',
+        'Withdrawing consent to telehealth may mean that AUMhealth-facilitated services can no longer be provided remotely and may require you to obtain care through another method.',
+      ],
+    },
+    {
+      heading: '17. Medical Records',
+      paragraphs: [
+        'Information from your telehealth encounter may become part of your medical record. The healthcare provider responsible for your care may maintain clinical records separately from administrative account records maintained through the AUMhealth Platform. Medical records are subject to applicable privacy, access, and retention requirements.',
+      ],
+    },
+    {
+      heading: '18. Recording of Telehealth Encounters',
+      paragraphs: [
+        'A telehealth encounter will not be audio- or video-recorded by the Medical Provider or AUMhealth unless recording is permitted by law and any consent required by applicable law has been obtained. Ordinary medical documentation of the encounter may be created and maintained as part of your medical record.',
+      ],
+    },
+    {
+      heading: '19. Patient Questions',
+      paragraphs: [
+        'You have the right to ask questions about telehealth, the proposed treatment, alternatives, material risks, medication instructions, and the identity or credentials of the healthcare professional providing your care. You should ask your provider for clarification before proceeding if you do not understand a material aspect of your proposed treatment.',
+      ],
+    },
+    {
+      heading: '20. No Guarantee of Results',
+      paragraphs: [
+        "Neither telehealth nor any treatment accessed through AUMhealth guarantees a particular clinical result. Individual responses to treatment vary. Testimonials, illustrations, estimated timelines, before-and-after images, or descriptions of other patients' experiences do not guarantee your outcome.",
+      ],
+    },
+    {
+      heading: '21. Consent and Acknowledgment',
+      paragraphs: [
+        'By checking an acceptance box, electronically signing, clicking an affirmative consent button, or otherwise providing legally valid electronic consent, you acknowledge and agree that:',
+        '- You have read and understand this Telehealth Informed Consent.',
+        '- You understand the potential benefits, risks, and limitations of telehealth.',
+        '- You understand that QH Token, Inc. and AUMhealth are not themselves the healthcare professional providing your medical care.',
+        '- You consent to receiving healthcare services through telehealth from the applicable licensed healthcare professional or medical entity.',
+        '- You understand that treatment and prescriptions are not guaranteed.',
+        '- You agree to provide accurate information and disclose your physical location when requested.',
+        '- You understand that telehealth is not appropriate for medical emergencies.',
+        '- You understand that additional state-specific or treatment-specific consents may be required.',
+      ],
+    },
+    {
+      heading: '22. Electronic Signature',
+      paragraphs: [
+        'You agree that your electronic acceptance of this Consent may have the same force and effect as a handwritten signature to the extent permitted by applicable law. The date, time, account identifier, IP/device information, version of the Consent accepted, and other audit information may be retained to document your consent.',
+      ],
+    },
+    {
+      heading: '23. Contact Information',
+      paragraphs: [
+        'For general administrative questions regarding AUMhealth:',
+        'AUMhealth™',
+        'QH Token, Inc.',
+        '30 N. Gould St., Suite 4000',
+        'Sheridan, Wyoming 82801',
+        `Email: ${EMAIL}`,
+        `Website: ${SITE}`,
+        'Questions concerning a specific diagnosis, prescription, treatment plan, side effect, or other clinical matter should be directed to the licensed healthcare professional or professional medical entity responsible for your care.',
+      ],
+    },
+  ],
+};
+
 export const legalPages = [
   termsContent,
   privacyPolicyContent,
@@ -800,4 +977,5 @@ export const legalPages = [
   medicalConsentContent,
   californiaResidentsContent,
   billOfRightsContent,
+  telehealthConsentContent,
 ];

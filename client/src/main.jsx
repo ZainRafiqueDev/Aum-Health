@@ -12,6 +12,7 @@ import {
   medicalConsentContent,
   californiaResidentsContent,
   billOfRightsContent,
+  telehealthConsentContent,
 } from './content/legal-content.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/medical-consent" element={<LegalPage content={medicalConsentContent} />} />
         <Route path="/california-residents" element={<LegalPage content={californiaResidentsContent} />} />
         <Route path="/bill-of-rights" element={<LegalPage content={billOfRightsContent} />} />
+        <Route path="/telehealth-consent" element={<LegalPage content={telehealthConsentContent} />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
