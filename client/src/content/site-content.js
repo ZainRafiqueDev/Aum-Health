@@ -28,9 +28,9 @@ export const hero = {
       key: 'weight-loss',
       href: '#weight-loss',
       label: 'Weight Loss',
-      style: 'product',
+      style: 'photo',
       tint: '#e3f2e8',
-      image: '/assets/products/weightloss1.avif',
+      image: '/assets/weightlosssection/weight.jpeg',
     },
     {
       key: 'peptides',
@@ -38,7 +38,7 @@ export const hero = {
       label: 'Peptides & Longevity',
       style: 'photo',
       tint: '#eceffb',
-      image: '/assets/peptides/peptides-1.jpeg',
+      image: '/assets/peptides/pep.jpeg',
     },
     {
       key: 'mens-health',
@@ -54,7 +54,7 @@ export const hero = {
       label: 'Hair Regrowth',
       style: 'photo',
       tint: '#faf3e6',
-      image: '/assets/hairrepair/hairr.jpeg',
+      image: '/assets/hairrepair/hairs.jpeg',
     },
   ],
   badges: [
@@ -179,6 +179,7 @@ export const peptidesSection = {
   tint: 'peptides',
   eyebrow: 'Advanced Peptide & Longevity Support',
   headingParts: ['Peptide therapy for ', { highlight: 'recovery, performance & longevity' }],
+  productImage: '/assets/peptides/pep.jpeg',
   checklistCaption: 'Benefits that make a difference',
   checklist: [
     'Doctor-guided peptide protocols',
@@ -225,7 +226,7 @@ export const hairSection = {
   tint: 'hair',
   eyebrow: 'Targeted Hair Restoration',
   headingParts: [{ highlight: 'Proven care' }, ' for thinning hair and regrowth'],
-  productImage: '/assets/hairrepair/hairrepair.jpeg',
+  productImage: '/assets/hairrepair/hairs.jpeg',
   checklistCaption: 'Personalized Support for Lasting Hair Results',
   checklist: [
     'Clinically backed regrowth ingredients',
@@ -346,13 +347,8 @@ export const guaranteeStrip = {
 
 export const footer = {
   contact: {
-    email: 'support@aumhealth.io',
-    phone: '(000) 000-0000', 
-    address: 'Address on file', 
+    email: 'help@AUMhealth.io'
   },
-  legalDisclaimer: [
-    '*The assessment made available on the AUM Health website does not create a doctor-patient relationship between the individual completing the assessment and AUM Health. FuseHealth, a network of US-licensed doctors that adhere to rigorous medical protocols designed for patient safety, has established exclusionary criteria to determine if an individual does not qualify for GLP-1s. The answers an individual provides to the AUM Health assessment consequently determine if the individual is screened out of eligibility for GLP-1 medication, and a FuseHealth clinician will meet with an individual after checkout to determine if they qualify for a prescription. FuseHealth clinicians retain the decision to prescribe compounded GLP-1s to patients.',
-  ],
   resultsDisclaimer: [
     '*Results vary based on starting weight and program adherence. Inches lost from hips, waist, chest, thighs and arms in the first month. Patients exercised daily and ate a reduced-calorie diet. Their fat loss is not typical. Results may vary. Medication prescriptions are at the discretion of medical providers and may not be suitable for everyone. AUM Health patients typically result in 1-2 lbs per week weight loss after 4 weeks, involving a healthy diet and exercise changes. Consult a healthcare professional before using medication or starting any weight loss program. *Based on the average weight loss as reported by patients without diabetes who reached and maintained a dose of 2.4 mg/week of GLP-1 treatment, along with a reduced-calorie diet and increased physical activity.',
     'Medication is included in the cost of the AUM Health Program. Wegovy is FDA-approved for weight loss. Ozempic is FDA-approved for type 2 diabetes treatment but may be prescribed for weight loss. The trademarks, service marks, trade names (Wegovy®, Ozempic®), and products displayed on this website are protected and belong to their respective owners. Medical treatment is provided by our affiliated professional medical corporations and associations. No data, photos, claims, or other information on this site is derived from clinical trials or studies; all such content is representative of AUM Health patient experience only.',

@@ -25,7 +25,7 @@ export default function App() {
         <SupplementBanner />
         {/* Sexual Health section temporarily removed per client request */}
         <FeatureSection {...mensHealthSection} collageAspect="16 / 9" />
-        <FeatureSection {...peptidesSection} collageAspect="16 / 9" />
+        <FeatureSection {...peptidesSection} />
         {/* Women's Health section temporarily removed per client request */}
         <FeatureSection {...hairSection} />
         {/* Skincare section temporarily removed per client request */}
