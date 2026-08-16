@@ -23,7 +23,7 @@ export const nav = {
 };
 
 export const hero = {
-  eyebrowStat: { prefix: 'Join', highlight: '10,000+', suffix: 'AUM Health patients' },
+  
   headingParts: ['Healthcare, ', { highlight: 'redefined' }, ' for real life.'],
   subhead:
     'We provide medical care online  simple, direct, and led by licensed providers. No waiting rooms. No unnecessary steps. Just care that works.',

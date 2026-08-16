@@ -41,16 +41,6 @@ const HeroContent = styled.div`
   margin: 0 auto;
 `;
 
-const Stat = styled.p`
-  font-size: var(--fs-small);
-  color: var(--color-text-on-dark-muted);
-  margin: 0 0 var(--space-1);
-
-  strong {
-    color: #fff;
-  }
-`;
-
 const HeroHeadline = styled(SectionHeading)`
   color: #fff;
   font-size: var(--fs-h1);
@@ -156,11 +146,6 @@ export default function Hero() {
         <Watermark aria-hidden="true">AUM</Watermark>
         <Stagger stagger={0.12}>
           <HeroContent>
-            <StaggerItem>
-              <Stat>
-                {hero.eyebrowStat.prefix} <strong>{hero.eyebrowStat.highlight}</strong> {hero.eyebrowStat.suffix}
-              </Stat>
-            </StaggerItem>
             <StaggerItem>
               <RichHeading as={HeroHeadline} parts={hero.headingParts} />
             </StaggerItem>
