@@ -18,6 +18,7 @@ export default function FeatureSection({
   tint,
   dark,
   reverseOrder,
+  collageAspect,
   eyebrow,
   headingParts,
   productImage,
@@ -85,7 +86,7 @@ export default function FeatureSection({
               <Collage>
                 {collageImages.map((img, i) => (
                   <ZoomIn key={img.src} delay={i * 0.12}>
-                    <CollageImg src={img.src} alt={img.alt} $offset={i === 1} />
+                    <CollageImg src={img.src} alt={img.alt} $offset={i === 1} $aspect={collageAspect} />
                   </ZoomIn>
                 ))}
               </Collage>

@@ -7,33 +7,44 @@
   </defs>
   <rect width="300" height="300" rx="20" fill="url(#portal-bg)" />
 
-  <!-- infinity mark -->
-  <g transform="translate(110 34)">
-    <circle cx="14" cy="14" r="11" stroke="#c9a575" stroke-width="3.2" fill="none" />
-    <circle cx="34" cy="14" r="11" stroke="#c9a575" stroke-width="3.2" fill="none" />
-    <circle cx="24" cy="14" r="3" fill="#fff6e6" />
-  </g>
-  <text x="50%" y="76" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#ffffff">AUM health</text>
-  <text x="50%" y="94" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" letter-spacing="1" fill="#c4d3e6">PATIENT PORTAL</text>
+  <!-- brand logo: crop tightly to just the mark (source PNG has a lot of
+       transparent padding + a too-thin-to-read baked-in wordmark), then pair
+       it with our own crisp, sized-up "AUM health" text -->
+  <clipPath id="portal-logo-clip">
+    <rect x="85" y="16" width="130" height="46" />
+  </clipPath>
+  <image
+    href="/assets/logo/logo1.png"
+    x="-30.16"
+    y="-123.89"
+    width="361"
+    height="345.6"
+    clip-path="url(#portal-logo-clip)"
+  />
+  <text x="50%" y="86" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">
+    <tspan fill="#ffffff">AUM</tspan>
+    <tspan fill="#c9a575" dx="4" font-weight="400">health</tspan>
+  </text>
+  <text x="50%" y="104" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" letter-spacing="1" fill="#c4d3e6">PATIENT PORTAL</text>
 
   <!-- phone/app card -->
-  <rect x="46" y="116" width="208" height="150" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.25" />
+  <rect x="46" y="118" width="208" height="168" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.25" />
 
   <!-- checklist rows -->
   <g font-family="Segoe UI, sans-serif" font-size="12" fill="#ffffff">
-    <circle cx="68" cy="140" r="8" fill="#4a9d6f" />
-    <text x="68" y="144" text-anchor="middle" font-size="10" fill="#fff">✓</text>
-    <rect x="86" y="135" width="140" height="10" rx="5" fill="#ffffff" fill-opacity="0.35" />
+    <circle cx="68" cy="148" r="8" fill="#4a9d6f" />
+    <text x="68" y="152" text-anchor="middle" font-size="10" fill="#fff">✓</text>
+    <rect x="86" y="143" width="140" height="10" rx="5" fill="#ffffff" fill-opacity="0.35" />
 
-    <circle cx="68" cy="170" r="8" fill="#4a9d6f" />
-    <text x="68" y="174" text-anchor="middle" font-size="10" fill="#fff">✓</text>
-    <rect x="86" y="165" width="110" height="10" rx="5" fill="#ffffff" fill-opacity="0.35" />
+    <circle cx="68" cy="182" r="8" fill="#4a9d6f" />
+    <text x="68" y="186" text-anchor="middle" font-size="10" fill="#fff">✓</text>
+    <rect x="86" y="177" width="110" height="10" rx="5" fill="#ffffff" fill-opacity="0.35" />
 
-    <circle cx="68" cy="200" r="8" fill="none" stroke="#c9a575" stroke-width="2" />
-    <rect x="86" y="195" width="125" height="10" rx="5" fill="#ffffff" fill-opacity="0.2" />
+    <circle cx="68" cy="216" r="8" fill="none" stroke="#c9a575" stroke-width="2" />
+    <rect x="86" y="211" width="125" height="10" rx="5" fill="#ffffff" fill-opacity="0.2" />
   </g>
 
   <!-- message chip -->
-  <rect x="68" y="224" width="164" height="26" rx="13" fill="#c9a575" fill-opacity="0.9" />
-  <text x="150" y="241" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#1c3348">Message your provider</text>
+  <rect x="68" y="246" width="164" height="26" rx="13" fill="#c9a575" fill-opacity="0.9" />
+  <text x="150" y="263" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#1c3348">Message your provider</text>
 </svg>

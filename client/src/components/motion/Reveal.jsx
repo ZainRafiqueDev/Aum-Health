@@ -77,4 +77,4 @@ export const hoverLift = {
   transition: { type: 'spring', stiffness: 300, damping: 20 },
 };
 
-export { motion };
+export { motion, useReducedMotion };

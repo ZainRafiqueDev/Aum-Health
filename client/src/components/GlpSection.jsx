@@ -39,7 +39,7 @@ const FeatureCard = styled(motion.div)`
   }
 `;
 
-const FeatureCardImage = styled.img`
+const FeatureCardImage = styled.img.attrs({ loading: 'lazy', decoding: 'async' })`
   width: 100px;
   height: 100px;
   flex: 0 0 auto;

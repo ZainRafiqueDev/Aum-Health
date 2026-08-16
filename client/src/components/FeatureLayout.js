@@ -37,22 +37,20 @@ export const Aside = styled.div`
 
 export const ProductWrap = styled.div`
   position: relative;
-  display: inline-flex;
-  max-width: 100%;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  margin-bottom: var(--space-4);
+  margin: 0 auto var(--space-4);
 `;
 
-export const ProductImage = styled.img`
+export const ProductImage = styled.img.attrs({ loading: 'lazy', decoding: 'async' })`
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 320px;
-  margin: 0 auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const ChecklistCaption = styled.h3`
@@ -78,11 +76,11 @@ export const Collage = styled.div`
   min-width: 0;
 `;
 
-export const CollageImg = styled.img`
+export const CollageImg = styled.img.attrs({ loading: 'lazy', decoding: 'async' })`
   display: block;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: ${(props) => props.$aspect || '4 / 5'};
   min-width: 0;
   object-fit: cover;
   object-position: top;

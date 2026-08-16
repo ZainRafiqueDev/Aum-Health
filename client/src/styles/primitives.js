@@ -5,7 +5,11 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--space-4);
+  padding: 0 var(--space-2);
+
+  @media (min-width: 640px) {
+    padding: 0 var(--space-4);
+  }
 `;
 
 export const Section = styled.section`

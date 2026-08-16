@@ -4,15 +4,12 @@ import BadgeStrip from './components/BadgeStrip.jsx';
 import GlpSection from './components/GlpSection.jsx';
 import FeatureSection from './components/FeatureSection.jsx';
 import SupplementBanner from './components/SupplementBanner.jsx';
-import TestimonialsSection from './components/TestimonialsSection.jsx';
 import GuaranteeStrip from './components/GuaranteeStrip.jsx';
 import Footer from './components/Footer.jsx';
 import {
   supplementSection,
-  sexualHealthSection,
   mensHealthSection,
   peptidesSection,
-  womensHealthSection,
   hairSection,
 } from './content/site-content.js';
 
@@ -24,15 +21,15 @@ export default function App() {
         <Hero />
         <BadgeStrip />
         <GlpSection />
-        <FeatureSection {...supplementSection} reverseOrder />
+        <FeatureSection {...supplementSection} />
         <SupplementBanner />
-        <FeatureSection {...sexualHealthSection} />
-        <FeatureSection {...mensHealthSection} />
-        <FeatureSection {...peptidesSection} />
-        <FeatureSection {...womensHealthSection} />
+        {/* Sexual Health section temporarily removed per client request */}
+        <FeatureSection {...mensHealthSection} collageAspect="16 / 9" />
+        <FeatureSection {...peptidesSection} collageAspect="16 / 9" />
+        {/* Women's Health section temporarily removed per client request */}
         <FeatureSection {...hairSection} />
         {/* Skincare section temporarily removed per client request */}
-        <TestimonialsSection />
+        {/* Testimonials section temporarily removed per client request */}
         <GuaranteeStrip />
       </main>
       <Footer />

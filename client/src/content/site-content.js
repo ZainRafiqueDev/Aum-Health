@@ -9,12 +9,9 @@ export const nav = {
   popupLinks: [
     { label: 'Weight Loss', href: '#weight-loss' },
     { label: 'Supplements', href: '#supplements' },
-    { label: 'Sexual Health', href: '#sexual-health' },
     { label: "Men's Health", href: '#mens-health' },
     { label: 'Peptides & Longevity', href: '#peptides' },
-    { label: "Women's Health", href: '#womens-health' },
     { label: 'Hair Regrowth', href: '#hair' },
-    { label: 'Testimonials', href: '#testimonials' },
   ],
   popupFooterLinks: [
     { label: 'Contact Support', href: '#' },
@@ -23,7 +20,6 @@ export const nav = {
 };
 
 export const hero = {
-  
   headingParts: ['Healthcare, ', { highlight: 'redefined' }, ' for real life.'],
   subhead:
     'We provide medical care online  simple, direct, and led by licensed providers. No waiting rooms. No unnecessary steps. Just care that works.',
@@ -37,12 +33,12 @@ export const hero = {
       image: '/assets/products/weightloss1.avif',
     },
     {
-      key: 'sexual-health',
-      href: '#sexual-health',
-      label: 'Sexual Health',
-      style: 'product',
-      tint: '#e6edf5',
-      image: '/assets/products/sex1.jpg',
+      key: 'peptides',
+      href: '#peptides',
+      label: 'Peptides & Longevity',
+      style: 'photo',
+      tint: '#eceffb',
+      image: '/assets/peptides/peptides-1.jpeg',
     },
     {
       key: 'mens-health',
@@ -50,18 +46,15 @@ export const hero = {
       label: "Men's Health",
       style: 'photo',
       tint: '#efe6d8',
-    
-      image: 'https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=400&auto=format&fit=crop',
+      image: '/assets/menhealth/hman.jpeg',
     },
-    
     {
-      key: 'womens-health',
-      href: '#womens-health',
-      label: "Women's Health",
+      key: 'hair',
+      href: '#hair',
+      label: 'Hair Regrowth',
       style: 'photo',
-      tint: '#f6e9ee',
-     
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop',
+      tint: '#faf3e6',
+      image: '/assets/hairrepair/hairr.jpeg',
     },
   ],
   badges: [
@@ -232,7 +225,7 @@ export const hairSection = {
   tint: 'hair',
   eyebrow: 'Targeted Hair Restoration',
   headingParts: [{ highlight: 'Proven care' }, ' for thinning hair and regrowth'],
-  productImage: '/assets/products/hairserum.webp',
+  productImage: '/assets/hairrepair/hairrepair.jpeg',
   checklistCaption: 'Personalized Support for Lasting Hair Results',
   checklist: [
     'Clinically backed regrowth ingredients',
@@ -241,7 +234,7 @@ export const hairSection = {
     'Fast shipping',
   ],
   collageImages: [
-    { src: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop', alt: 'AUM Health hair restoration lifestyle photo' },
+    { src: '/assets/hairrepair/menwithhair.jpeg', alt: 'AUM Health hair restoration patient' },
     { src: 'https://images.unsplash.com/photo-1619218533116-f050e7d91d91?q=80&w=400&auto=format&fit=crop', alt: 'AUM Health hair restoration lifestyle photo' },
   ],
   secondaryHeading: 'Advanced hair regrowth care to help you look and feel your best',
