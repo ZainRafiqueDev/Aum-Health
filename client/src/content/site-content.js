@@ -7,11 +7,11 @@ export const brand = {
 export const nav = {
  
   popupLinks: [
-    { label: 'Weight Loss', href: '#weight-loss' },
-    { label: 'Supplements', href: '#supplements' },
-    { label: "Men's Health", href: '#mens-health' },
-    { label: 'Peptides & Longevity', href: '#peptides' },
-    { label: 'Hair Regrowth', href: '#hair' },
+    { label: 'Weight Loss', href: '/#weight-loss' },
+    { label: 'Supplements', href: '/#supplements' },
+    { label: "Men's Health", href: '/#mens-health' },
+    { label: 'Peptides & Longevity', href: '/#peptides' },
+    { label: 'Hair Serum', href: '/#hair' },
   ],
   popupFooterLinks: [
     { label: 'Contact Support', href: '#' },
