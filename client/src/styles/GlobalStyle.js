@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --color-blue-accent: #9fc3e6;
     --color-blue-accent-light: #eaf3fb;
     --color-gold-accent: #c9a575;
+    --color-gold-bright: #dba84f;
     --color-grey-wordmark: #8a8f99;
 
     /* Semantic */

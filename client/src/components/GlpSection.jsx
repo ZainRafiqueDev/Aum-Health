@@ -53,6 +53,23 @@ const Disclaimer = styled(Container).attrs({ as: 'p' })`
   color: var(--color-text-muted);
 `;
 
+const ClosingImageWrap = styled(motion.div)`
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1402 / 1122;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: var(--space-1) 0 var(--space-4);
+  box-shadow: 0 20px 40px -20px rgba(28, 51, 72, 0.4);
+`;
+
+const ClosingImage = styled.img.attrs({ loading: 'lazy', decoding: 'async' })`
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
 export default function GlpSection() {
   return (
     <Section id={glpSection.id} $background="var(--tint-weightloss)">
@@ -96,6 +113,17 @@ export default function GlpSection() {
               <Closing>
                 <h3>{glpSection.secondaryHeading}</h3>
                 <p>{glpSection.secondaryBody}</p>
+                {glpSection.secondaryImage && (
+                  <ClosingImageWrap
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-60px' }}
+                    transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <ClosingImage src={glpSection.secondaryImage.src} alt={glpSection.secondaryImage.alt} />
+                  </ClosingImageWrap>
+                )}
                 <Btn href={glpSection.cta.href}>{glpSection.cta.label}</Btn>
               </Closing>
             </Reveal>

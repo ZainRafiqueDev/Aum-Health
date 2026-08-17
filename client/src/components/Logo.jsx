@@ -98,7 +98,7 @@ const Aum = styled.span`
 `;
 
 const HealthWord = styled.span`
-  color: ${(props) => (props.$light ? 'var(--color-gold-accent)' : 'var(--color-grey-wordmark)')};
+  color: var(--color-gold-bright);
   font-weight: 400;
 `;
 

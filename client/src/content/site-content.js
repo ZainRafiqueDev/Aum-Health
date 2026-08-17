@@ -85,6 +85,7 @@ export const glpSection = {
   secondaryHeading: 'A smarter approach to weight loss, built around you',
   secondaryBody:
     'Find the right GLP-1 medication with the confidence that comes from knowing it is doctor-approved and budget-friendly.',
+  secondaryImage: { src: '/assets/weightlosssection/glp1.jpeg', alt: 'AUM Health member staying active and strong' },
   cta: { label: 'Get Started', href: '#get-started' },
   features: [
     {
