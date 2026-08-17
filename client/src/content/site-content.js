@@ -51,7 +51,7 @@ export const hero = {
     {
       key: 'hair',
       href: '#hair',
-      label: 'Hair Regrowth',
+      label: 'Hair Serum',
       style: 'photo',
       tint: '#faf3e6',
       image: '/assets/hairrepair/hairs.jpeg',
@@ -242,7 +242,7 @@ export const hairSection = {
   secondaryHeading: 'Advanced hair regrowth care to help you look and feel your best',
   secondaryBody:
     'Revitalize your roots and restore fuller-looking hair with our powerful hair regrowth serum, formulated to nourish the scalp and support visibly thicker, healthier strands.',
-  comingSoon: true,
+  cta: { label: 'Get Started', href: '#get-started' },
 };
 
 export const skincareSection = {

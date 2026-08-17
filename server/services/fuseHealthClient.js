@@ -1,10 +1,4 @@
-// Single wiring point for the FuseHealth telehealth API.
-//
-// The client (site owner) does not have FuseHealth API credentials yet.
-// Once they do: set FUSEHEALTH_BASE_URL and FUSEHEALTH_API_KEY in server/.env,
-// then replace the mock bodies below with real fetch() calls to FuseHealth's
-// endpoints. Nothing outside this file needs to change — routes/*.js only
-// ever call the functions exported here.
+
 
 const BASE_URL = process.env.FUSEHEALTH_BASE_URL;
 const API_KEY = process.env.FUSEHEALTH_API_KEY;
