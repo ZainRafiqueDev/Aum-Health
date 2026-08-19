@@ -5,14 +5,13 @@ export const brand = {
 };
 
 export const nav = {
- 
+  loginLink: { label: 'Login', href: 'https://aumhealth.fusehealth.com/signin' },
   popupLinks: [
     { label: 'Weight Loss', href: '/#weight-loss' },
     { label: 'Supplements', href: '/#supplements' },
     { label: "Men's Health", href: '/#mens-health' },
     { label: 'Peptides & Longevity', href: '/#peptides' },
     { label: 'Hair Serum', href: '/#hair' },
-    { label: 'Login', href: 'https://aumhealth.fusehealth.com/signin' },
   ],
   popupFooterLinks: [
     { label: 'Contact Support', href: '#' },

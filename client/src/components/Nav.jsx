@@ -41,8 +41,16 @@ const LogoLink = styled.a`
   text-decoration: none;
 `;
 
-const MenuToggle = styled.button`
+const LoginLink = styled.a`
   margin-left: auto;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--fs-small);
+  color: ${(props) => (props.$scrolled ? 'var(--color-navy-800)' : '#ffffff')};
+  padding: 0.5rem 0.75rem;
+`;
+
+const MenuToggle = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -219,6 +227,15 @@ export default function Nav({ alwaysSolid = false }) {
           <LogoLink href="/" onClick={handleLinkClick}>
             <Logo light={!scrolled} />
           </LogoLink>
+
+          <LoginLink
+            href={nav.loginLink.href}
+            $scrolled={scrolled}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {nav.loginLink.label}
+          </LoginLink>
 
           <MenuToggle
             type="button"
