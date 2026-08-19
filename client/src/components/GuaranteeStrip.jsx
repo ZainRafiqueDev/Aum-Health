@@ -12,6 +12,7 @@ const Strip = styled.section`
 
 const Inner = styled(motion.create(Container))`
   display: grid;
+  grid-template-columns: 1fr;
   gap: var(--space-3);
   text-align: center;
 
@@ -33,6 +34,7 @@ const Item = styled.div`
   font-weight: 700;
   color: ${(props) => (props.$first ? 'var(--color-gold-accent)' : 'var(--color-navy-800)')};
   padding: var(--space-1) 0;
+  min-width: 0;
 
   @media (min-width: 700px) {
     border-right: 1px solid var(--color-border);

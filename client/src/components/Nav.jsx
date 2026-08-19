@@ -32,27 +32,46 @@ const NavInner = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-3);
+  gap: var(--space-2);
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
+
+  @media (min-width: 480px) {
+    gap: var(--space-3);
+  }
 `;
 
 const LogoLink = styled.a`
   text-decoration: none;
+  flex: 0 1 auto;
+  min-width: 0;
+  transform-origin: left center;
+  transform: scale(0.85);
+
+  @media (min-width: 420px) {
+    transform: none;
+  }
 `;
 
 const LoginLink = styled.a`
   margin-left: auto;
+  flex: 0 0 auto;
   text-decoration: none;
   font-weight: 700;
   font-size: var(--fs-small);
+  white-space: nowrap;
   color: ${(props) => (props.$scrolled ? 'var(--color-navy-800)' : '#ffffff')};
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.4rem;
+
+  @media (min-width: 480px) {
+    padding: 0.5rem 0.75rem;
+  }
 `;
 
 const MenuToggle = styled.button`
-  width: 40px;
-  height: 40px;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: none;
   background: ${(props) => (props.$scrolled ? 'var(--color-bg-alt)' : 'rgba(255, 255, 255, 0.15)')};
@@ -64,10 +83,19 @@ const MenuToggle = styled.button`
   cursor: pointer;
 
   span {
-    width: 18px;
+    width: 16px;
     height: 2px;
     background: ${(props) => (props.$scrolled ? 'var(--color-navy-800)' : '#ffffff')};
     border-radius: 2px;
+  }
+
+  @media (min-width: 480px) {
+    width: 40px;
+    height: 40px;
+
+    span {
+      width: 18px;
+    }
   }
 `;
 
