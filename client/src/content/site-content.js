@@ -12,6 +12,7 @@ export const nav = {
     { label: "Men's Health", href: '/#mens-health' },
     { label: 'Peptides & Longevity', href: '/#peptides' },
     { label: 'Hair Serum', href: '/#hair' },
+    { label: 'Login', href: 'https://aumhealth.fusehealth.com/signin' },
   ],
   popupFooterLinks: [
     { label: 'Contact Support', href: '#' },

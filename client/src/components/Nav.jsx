@@ -245,12 +245,20 @@ export default function Nav({ alwaysSolid = false }) {
         </PopupHeader>
 
         <PopupLinks aria-label="All sections">
-          {nav.popupLinks.map((link) => (
-            <a key={link.label} href={link.href} onClick={handleLinkClick}>
-              {link.label}
-              <span aria-hidden="true">›</span>
-            </a>
-          ))}
+          {nav.popupLinks.map((link) => {
+            const isExternal = /^https?:\/\//.test(link.href);
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={handleLinkClick}
+                {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              >
+                {link.label}
+                <span aria-hidden="true">›</span>
+              </a>
+            );
+          })}
         </PopupLinks>
 
         <PopupFooter>
