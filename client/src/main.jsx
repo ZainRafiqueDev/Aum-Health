@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import GlobalStyle from './styles/GlobalStyle.js';
 import LegalPage from './components/LegalPage.jsx';
+import ScrollToHash from './components/ScrollToHash.jsx';
 import {
   termsContent,
   privacyPolicyContent,
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalStyle />
     <BrowserRouter>
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/terms-and-conditions" element={<LegalPage content={termsContent} />} />
