@@ -53,21 +53,82 @@ const Disclaimer = styled(Container).attrs({ as: 'p' })`
   color: var(--color-text-muted);
 `;
 
-const ClosingImageWrap = styled(motion.div)`
-  width: 100%;
-  max-width: 380px;
-  aspect-ratio: 1402 / 1122;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
+const PricingGrid = styled.div`
+  display: grid;
+  gap: var(--space-3);
   margin: var(--space-1) 0 var(--space-4);
-  box-shadow: 0 20px 40px -20px rgba(28, 51, 72, 0.4);
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
-const ClosingImage = styled.img.attrs({ loading: 'lazy', decoding: 'async' })`
-  display: block;
-  width: 100%;
-  height: 100%;
+const PricingCard = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-card);
+`;
+
+const PricingTitle = styled.h4`
+  font-size: 1.15rem;
+  margin: 0 0 var(--space-1);
+`;
+
+const PricingPrice = styled.p`
+  margin: 0 0 var(--space-2);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-navy-900);
+
+  span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+`;
+
+const PricingBody = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+`;
+
+const PricingImage = styled.img.attrs({ loading: 'lazy', decoding: 'async' })`
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
   object-fit: cover;
+  border-radius: var(--radius-sm);
+`;
+
+const PricingDescription = styled.p`
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+`;
+
+const PricingDivider = styled.hr`
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 0 0 var(--space-2);
+`;
+
+const PricingChecklist = styled(Checklist)`
+  margin: 0 0 var(--space-3);
+  gap: var(--space-1);
+`;
+
+const PricingBtn = styled(Btn)`
+  width: 100%;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: auto;
 `;
 
 export default function GlpSection() {
@@ -113,18 +174,40 @@ export default function GlpSection() {
               <Closing>
                 <h3>{glpSection.secondaryHeading}</h3>
                 <p>{glpSection.secondaryBody}</p>
-                {glpSection.secondaryImage && (
-                  <ClosingImageWrap
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-60px' }}
-                    transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                    whileHover={{ scale: 1.02 }}
-                  >
-                    <ClosingImage src={glpSection.secondaryImage.src} alt={glpSection.secondaryImage.alt} />
-                  </ClosingImageWrap>
+                {glpSection.pricingCards && (
+                  <PricingGrid>
+                    {glpSection.pricingCards.map((card, i) => (
+                      <PricingCard
+                        key={card.title}
+                        initial={{ opacity: 0, y: 24 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-60px' }}
+                        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
+                        whileHover={{ y: -6, scale: 1.015 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        <PricingTitle>{card.title}</PricingTitle>
+                        <PricingPrice>
+                          {card.price} <span>{card.priceNote}</span>
+                        </PricingPrice>
+                        <PricingBody>
+                          <PricingImage src={card.image} alt="" />
+                          <PricingDescription>{card.description}</PricingDescription>
+                        </PricingBody>
+                        <PricingDivider />
+                        <PricingChecklist>
+                          {card.checklist.map((item) => (
+                            <ChecklistItem key={item}>
+                              <CheckIcon>✓</CheckIcon>
+                              {item}
+                            </ChecklistItem>
+                          ))}
+                        </PricingChecklist>
+                        <PricingBtn href={card.cta.href}>{card.cta.label}</PricingBtn>
+                      </PricingCard>
+                    ))}
+                  </PricingGrid>
                 )}
-                <Btn href={glpSection.cta.href}>{glpSection.cta.label}</Btn>
               </Closing>
             </Reveal>
           </Main>

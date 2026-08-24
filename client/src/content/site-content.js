@@ -85,8 +85,29 @@ export const glpSection = {
   secondaryHeading: 'A smarter approach to weight loss, built around you',
   secondaryBody:
     'Find the right GLP-1 medication with the confidence that comes from knowing it is doctor-approved and budget-friendly.',
-  secondaryImage: { src: '/assets/weightlosssection/glp1.jpeg', alt: 'AUM Health member staying active and strong' },
   cta: { label: 'Get Started', href: '#get-started' },
+  pricingCards: [
+    {
+      title: 'Compounded Semaglutide',
+      price: '$199',
+      priceNote: '/ month*',
+      image: '/assets/weightlosssection/weight-loss-vial.jpeg',
+      description:
+        'Semaglutide is the active ingredient used in certain brand-name GLP-1 medications (e.g., Ozempic®, Wegovy®).',
+      checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
+      cta: { label: 'Get Started Today', href: '#get-started' }, // TODO: client to provide Semaglutide checkout link
+    },
+    {
+      title: 'Compounded Tirzepatide',
+      price: '$233',
+      priceNote: '/ month*',
+      image: '/assets/weightlosssection/weight.jpeg',
+      description:
+        'Tirzepatide is the active ingredient used in certain brand-name dual GIP/GLP-1 medications (e.g., Mounjaro®, Zepbound®).',
+      checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
+      cta: { label: 'Get Started Today', href: '#get-started' }, // TODO: client to provide Tirzepatide checkout link
+    },
+  ],
   features: [
     {
       title: 'Everything, all in one place',
