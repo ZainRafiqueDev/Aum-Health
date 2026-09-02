@@ -193,7 +193,7 @@ export const mensHealthSection = {
   secondaryHeading: 'Care designed to help you feel stronger, sharper, and more in control',
   secondaryBody:
     'Doctor-guided care for hormones, energy, and performance, with treatment plans tailored to your goals and adjusted as your body responds.',
-  cta: { label: 'Get Started', href: '#get-started' },
+  cta: { label: 'Get Started', href: 'https://app.aumhealth.io/programs/e4648819-318d-4214-83b5-d69b3cfe83cb' },
 };
 
 export const peptidesSection = {
