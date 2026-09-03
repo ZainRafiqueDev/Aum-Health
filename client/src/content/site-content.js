@@ -217,7 +217,7 @@ export const peptidesSection = {
   secondaryHeading: 'Science-backed support for how you recover and age',
   secondaryBody:
     'Doctor-guided peptide protocols designed to support recovery, performance, and long-term cellular health, personalized to your goals.',
-  cta: { label: 'Get Started', href: '#get-started' },
+  cta: { label: 'Get Started', href: 'https://app.aumhealth.io/programs/9cc54b88-e50f-4f48-905b-9980f3eff091' },
 };
 
 export const womensHealthSection = {
