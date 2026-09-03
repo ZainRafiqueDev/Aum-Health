@@ -95,7 +95,7 @@ export const glpSection = {
       description:
         'Semaglutide is the active ingredient used in certain brand-name GLP-1 medications (e.g., Ozempic®, Wegovy®).',
       checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
-      cta: { label: 'Get Started Today', href: '#get-started' }, // TODO: client to provide Semaglutide checkout link
+      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' }, // TODO: client to provide Semaglutide checkout link
     },
     {
       title: 'Compounded Tirzepatide',
@@ -105,7 +105,7 @@ export const glpSection = {
       description:
         'Tirzepatide is the active ingredient used in certain brand-name dual GIP/GLP-1 medications (e.g., Mounjaro®, Zepbound®).',
       checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
-      cta: { label: 'Get Started Today', href: '#get-started' }, // TODO: client to provide Tirzepatide checkout link
+      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' }, // TODO: client to provide Tirzepatide checkout link
     },
   ],
   features: [
