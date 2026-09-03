@@ -263,7 +263,7 @@ export const hairSection = {
   secondaryHeading: 'Advanced hair regrowth care to help you look and feel your best',
   secondaryBody:
     'Revitalize your roots and restore fuller-looking hair with our powerful hair regrowth serum, formulated to nourish the scalp and support visibly thicker, healthier strands.',
-  cta: { label: 'Get Started', href: '#get-started' },
+  cta: { label: 'Get Started', href: 'https://app.aumhealth.io/programs/e66e4f22-3903-4e6f-8511-431ac36787b2' },
 };
 
 export const skincareSection = {
