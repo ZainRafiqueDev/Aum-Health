@@ -155,6 +155,27 @@ export const supplementBanner = {
   tagline: 'Doctor-formulated blends, built to support how your body works every single day.',
 };
 
+// Placed where the supplements section used to be while it's paused (see App.jsx).
+export const medicalDisclaimerSection = {
+  id: 'supplements',
+  howItWorksImage: '/assets/how-it-works/how-it-works.jpeg',
+  howItWorksImageAlt: 'AUMhealth How It Works: choose your treatment, complete medical intake, licensed provider review, prescription if medically appropriate, pharmacy fulfillment, and delivery.',
+  disclaimers: [
+    {
+      heading: 'Medical Disclaimer',
+      body: 'AUMhealth is a concierge telehealth platform that facilitates access to independent, licensed healthcare providers throughout the United States. AUMhealth does not itself provide medical care, diagnose medical conditions, make treatment decisions, write prescriptions, or dispense medications. All medical consultations, clinical evaluations, treatment recommendations, and prescription decisions are made solely by independent licensed healthcare providers exercising their professional medical judgment. Prescription medications are available only when a licensed healthcare provider determines they are medically appropriate following an individual evaluation.',
+    },
+    {
+      heading: 'Compounded Medication Notice',
+      body: 'Compounded medications are individually prepared prescription medications produced by licensed compounding pharmacies in accordance with applicable federal and state requirements. Compounded medications are not FDA-approved, and the FDA does not review or verify compounded medications for safety, effectiveness, or quality before they are marketed. When permitted by applicable law, a licensed healthcare provider may prescribe a compounded medication when, in the provider’s independent professional judgment, it is medically appropriate for an individual patient. The availability of any compounded medication is subject to clinical eligibility, provider determination, pharmacy availability, and applicable law.',
+    },
+    {
+      heading: 'Clinical Partners',
+      body: 'AUMhealth facilitates access to healthcare services through independent third-party partners, including Beluga Health for clinical care, The Pharmacy Hub and its affiliated pharmacy partners for prescription fulfillment, and independent laboratory partners for diagnostic testing. These organizations operate independently and are responsible for the healthcare, pharmacy, laboratory, and other clinical services they provide.',
+    },
+  ],
+};
+
 export const sexualHealthSection = {
   id: 'sexual-health',
   tint: 'sexual-health',

@@ -3,11 +3,10 @@ import Hero from './components/Hero.jsx';
 import BadgeStrip from './components/BadgeStrip.jsx';
 import GlpSection from './components/GlpSection.jsx';
 import FeatureSection from './components/FeatureSection.jsx';
-import SupplementBanner from './components/SupplementBanner.jsx';
+import MedicalDisclaimerSection from './components/MedicalDisclaimerSection.jsx';
 import GuaranteeStrip from './components/GuaranteeStrip.jsx';
 import Footer from './components/Footer.jsx';
 import {
-  supplementSection,
   mensHealthSection,
   peptidesSection,
   hairSection,
@@ -21,8 +20,8 @@ export default function App() {
         <Hero />
         <BadgeStrip />
         <GlpSection />
-        <FeatureSection {...supplementSection} />
-        <SupplementBanner />
+        {/* Supplement section temporarily removed per client request (see supplementSection/supplementBanner in site-content.js) — replaced with medical disclaimers */}
+        <MedicalDisclaimerSection />
         {/* Sexual Health section temporarily removed per client request */}
         <FeatureSection {...mensHealthSection} collageAspect="16 / 9" />
         <FeatureSection {...peptidesSection} />
