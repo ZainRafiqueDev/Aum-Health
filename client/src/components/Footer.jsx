@@ -21,6 +21,10 @@ const Brand = styled.div`
     color: var(--color-text-muted);
     font-size: var(--fs-small);
   }
+
+  a {
+    color: var(--color-text-muted);
+  }
 `;
 
 const PolicyLinks = styled.nav`
@@ -48,7 +52,8 @@ export default function Footer() {
       <Inner>
         <Brand>
           <Logo />
-          <p>{footer.contact.email}</p>
+          <p><a href={`mailto:${footer.contact.email}`}>{footer.contact.email}</a></p>
+          {footer.contact.phone && <p>{footer.contact.phone}</p>}
           {footer.contact.address && <p>{footer.contact.address}</p>}
         </Brand>
 

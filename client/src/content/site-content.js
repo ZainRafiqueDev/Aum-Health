@@ -390,7 +390,8 @@ export const guaranteeStrip = {
 
 export const footer = {
   contact: {
-    email: 'help@AUMhealth.io'
+    email: 'help@AUMhealth.io',
+    phone: '+1 954 271 5250',
   },
   resultsDisclaimer: [
     '*Results vary based on starting weight and program adherence. Inches lost from hips, waist, chest, thighs and arms in the first month. Patients exercised daily and ate a reduced-calorie diet. Their fat loss is not typical. Results may vary. Medication prescriptions are at the discretion of medical providers and may not be suitable for everyone. AUM Health patients typically result in 1-2 lbs per week weight loss after 4 weeks, involving a healthy diet and exercise changes. Consult a healthcare professional before using medication or starting any weight loss program. *Based on the average weight loss as reported by patients without diabetes who reached and maintained a dose of 2.4 mg/week of GLP-1 treatment, along with a reduced-calorie diet and increased physical activity.',
