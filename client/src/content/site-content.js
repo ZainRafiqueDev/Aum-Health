@@ -22,7 +22,7 @@ export const nav = {
 export const hero = {
   headingParts: ['Healthcare, ', { highlight: 'redefined' }, ' for real life.'],
   subhead:
-    'We provide medical care online  simple, direct, and led by licensed providers. No waiting rooms. No unnecessary steps. Just care that works.',
+    'We provide medical care online simple, direct, and led by licensed providers.',
   categories: [
     {
       key: 'weight-loss',
