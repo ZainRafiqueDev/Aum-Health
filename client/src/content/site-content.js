@@ -14,7 +14,7 @@ export const nav = {
     { label: 'Hair Serum', href: '/#hair' },
   ],
   popupFooterLinks: [
-    { label: 'Contact Support', href: '#' },
+    { label: 'Contact Support', href: '/#contact' },
     { label: 'About Us', href: '#' },
   ],
 };

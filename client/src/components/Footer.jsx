@@ -3,7 +3,7 @@ import { footer } from '../content/site-content.js';
 import Logo from './Logo.jsx';
 import { Container } from '../styles/primitives.js';
 
-const FooterEl = styled.footer`
+const FooterEl = styled.footer.attrs({ id: 'contact' })`
   background: var(--color-bg-alt);
   border-top: 1px solid var(--color-border);
   padding: var(--space-5) 0 var(--space-4);
