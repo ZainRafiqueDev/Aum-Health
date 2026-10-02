@@ -46,6 +46,12 @@ const Copyright = styled.p`
   margin: 0;
 `;
 
+const StatesNotice = styled.p`
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  margin: 0;
+`;
+
 export default function Footer() {
   return (
     <FooterEl>
@@ -64,6 +70,12 @@ export default function Footer() {
             </a>
           ))}
         </PolicyLinks>
+
+        {footer.statesNotOperational?.length > 0 && (
+          <StatesNotice>
+            We are not operational in these states: {footer.statesNotOperational.join(', ')}
+          </StatesNotice>
+        )}
 
         <Copyright>{footer.copyright}</Copyright>
       </Inner>
