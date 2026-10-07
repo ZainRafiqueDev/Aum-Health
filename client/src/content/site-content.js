@@ -103,7 +103,7 @@ export const glpSection = {
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight.jpeg',
       description:
-        'Tirzepatide is the active ingredient used in certain brand-name dual GIP/GLP-1 medications (e.g., Mounjaro®, Zepbound®).',
+        'Tirzepatide is the active ingredient used in certain brand-name dual GIP/GLP-1 medications .',
       checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
       cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' }, // TODO: client to provide Tirzepatide checkout link
     },
