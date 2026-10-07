@@ -84,7 +84,7 @@ export const glpSection = {
   ],
   secondaryHeading: 'A smarter approach to weight loss, built around you',
   secondaryBody:
-    'Find the right GLP-1 medication with the confidence that comes from knowing it is doctor-approved and budget-friendly.',
+    'Find the right GLP-1 medication with the confidence that comes from knowing it is doctor-approved.',
   cta: { label: 'Get Started', href: '#get-started' },
   pricingCards: [
     {
