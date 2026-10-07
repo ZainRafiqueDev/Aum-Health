@@ -93,7 +93,7 @@ export const glpSection = {
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight-loss-vial.jpeg',
       description:
-        'Semaglutide is the active ingredient used in certain brand-name GLP-1 medications (e.g., Ozempic®, Wegovy®).',
+        'Semaglutide is the active ingredient used in certain brand-name GLP-1 medications .',
       checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
       cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' }, // TODO: client to provide Semaglutide checkout link
     },
