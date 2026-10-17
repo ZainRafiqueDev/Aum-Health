@@ -192,7 +192,9 @@ export default function GlpSection() {
                         </PricingPrice>
                         <PricingBody>
                           <PricingImage src={card.image} alt="" />
-                          <PricingDescription>{card.description}</PricingDescription>
+                          {card.description && (
+                            <PricingDescription>{card.description}</PricingDescription>
+                          )}
                         </PricingBody>
                         <PricingDivider />
                         <PricingChecklist>

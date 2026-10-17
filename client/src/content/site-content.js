@@ -72,7 +72,6 @@ export const glpSection = {
   productImage: '/assets/weightlosssection/weight-loss-vial.jpeg',
   checklistCaption: 'Everything you need  included:',
   checklist: [
-    'Prescription to fast, effective GLP-1',
     '1:1 physician guidance',
     'Free dietician visits & care coaching included*',
     '24/7 support',
@@ -92,8 +91,7 @@ export const glpSection = {
       price: '$199',
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight-loss-vial.jpeg',
-      description:
-        'Semaglutide is the active ingredient used in certain brand-name GLP-1 medications .',
+      description: '',
       checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
       cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' }, // TODO: client to provide Semaglutide checkout link
     },
@@ -102,8 +100,7 @@ export const glpSection = {
       price: '$233',
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight.jpeg',
-      description:
-        'Tirzepatide is the active ingredient used in certain brand-name dual GIP/GLP-1 medications .',
+      description: '',
       checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
       cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' }, // TODO: client to provide Tirzepatide checkout link
     },
