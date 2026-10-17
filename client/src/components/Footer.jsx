@@ -71,10 +71,29 @@ export default function Footer() {
           ))}
         </PolicyLinks>
 
-        {footer.statesNotOperational?.length > 0 && (
+        {footer.legalEntity && (
           <StatesNotice>
-            We are not operational in these states: {footer.statesNotOperational.join(', ')}
+            {footer.legalEntity}
+            {footer.partners?.length > 0 && (
+              <>
+                {' '}in partnership with{' '}
+                {footer.partners.map((partner, i) => (
+                  <span key={partner.label}>
+                    <a href={partner.href} target="_blank" rel="noopener noreferrer">
+                      {partner.label}
+                    </a>
+                    {i < footer.partners.length - 2 && ', '}
+                    {i === footer.partners.length - 2 && ' and '}
+                  </span>
+                ))}
+              </>
+            )}
+            .
           </StatesNotice>
+        )}
+
+        {footer.statesNotOperationalNotice && (
+          <StatesNotice>{footer.statesNotOperationalNotice}</StatesNotice>
         )}
 
         <Copyright>{footer.copyright}</Copyright>

@@ -400,7 +400,13 @@ export const footer = {
     'Testimonials on this website reflect illustrative AUM Health patient experiences. For patient privacy, images representing those testimonials use stock photography models.',
     'By accepting our Terms of Use, you additionally understand and agree that AUM Health is not acting as a pharmacy, nor does AUM Health control or interfere with any such services. You understand and agree that you may be entering into a relationship with a pharmacy, pharmacist, and/or pharmacy group as a separate third-party entity. Partner pharmacy details will be listed here once finalized.',
   ],
-  statesNotOperational: ['Mississippi', 'New Jersey', 'Alaska', 'Texas'],
+  statesNotOperationalNotice:
+    'We serve patients in 46 states. We do not currently provide services in Alaska, Mississippi, New Jersey or Texas.',
+  legalEntity: 'QH Token, Inc.',
+  partners: [
+    { label: 'Beluga Health', href: 'https://www.belugahealth.com' },
+    { label: 'The Pharmacy Hub', href: 'https://pharmacyhub.com/' },
+  ],
   showCertificationBadge: false,
   pharmacyBlurb:
     'We are partnered with multiple USA certified pharmacies to bring the best product and overall experience to our membership. Our team meets regularly with pharmacies to discuss any product shortages, shipping delays, and get updated reports on their medication testing.',
