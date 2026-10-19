@@ -59,18 +59,18 @@ const Subhead = styled.p`
   line-height: 1.6;
 `;
 
-// The single shared white panel all 4 cards live inside.
+// The single shared white panel all 3 cards live inside.
 const CardPanel = styled(motion.div)`
   position: relative;
   z-index: 2;
-  max-width: 1040px;
+  max-width: 800px;
   margin: ${-OVERLAP}px var(--space-4) 0;
   padding: 18px;
   background: #fff;
   border-radius: 24px;
   box-shadow: var(--shadow-card);
 
-  @media (min-width: 1104px) {
+  @media (min-width: 864px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -82,8 +82,21 @@ const CardsGrid = styled(motion.div)`
   gap: 10px;
   min-width: 0;
 
+  /* Odd card out on the 2-column mobile grid sits centred on its own row. */
+  & > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 5px);
+  }
+
   @media (min-width: 700px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    & > :last-child:nth-child(odd) {
+      grid-column: auto;
+      justify-self: stretch;
+      width: auto;
+    }
   }
 `;
 
