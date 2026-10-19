@@ -10,7 +10,6 @@ export const nav = {
     { label: 'Weight Loss', href: '/#weight-loss' },
     { label: 'Supplements', href: '/#supplements' },
     { label: "Men's Health", href: '/#mens-health' },
-    { label: 'Peptides & Longevity', href: '/#peptides' },
     { label: 'Hair Serum', href: '/#hair' },
   ],
   popupFooterLinks: [
@@ -31,14 +30,6 @@ export const hero = {
       style: 'photo',
       tint: '#e3f2e8',
       image: '/assets/weightlosssection/weight.jpeg',
-    },
-    {
-      key: 'peptides',
-      href: '#peptides',
-      label: 'Peptides & Longevity',
-      style: 'photo',
-      tint: '#eceffb',
-      image: '/assets/peptides/pep.jpeg',
     },
     {
       key: 'mens-health',
@@ -213,6 +204,19 @@ export const mensHealthSection = {
     'Doctor-guided care for hormones, energy, and performance, with treatment plans tailored to your goals and adjusted as your body responds.',
   cta: { label: 'Get Started', href: 'https://app.aumhealth.io/programs/e4648819-318d-4214-83b5-d69b3cfe83cb' },
 };
+
+// Peptides & Longevity is paused (see App.jsx). Everything needed to restore it is kept here:
+// the section below, plus the nav link and hero tile that were removed with it.
+export const peptidesNavLink = { label: 'Peptides & Longevity', href: '/#peptides' }; // was in nav.popupLinks, after Men's Health
+
+export const peptidesHeroCategory = {
+  key: 'peptides',
+  href: '#peptides',
+  label: 'Peptides & Longevity',
+  style: 'photo',
+  tint: '#eceffb',
+  image: '/assets/peptides/pep.jpeg',
+}; // was in hero.categories, after Weight Loss
 
 export const peptidesSection = {
   id: 'peptides',
