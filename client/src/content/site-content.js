@@ -258,22 +258,22 @@ export const womensHealthSection = {
 export const hairSection = {
   id: 'hair',
   tint: 'hair',
-  eyebrow: 'Targeted Hair Restoration',
-  headingParts: [{ highlight: 'Personalized care' }, ' for thinning hair and regrowth'],
+  eyebrow: 'Hair Care Support',
+  headingParts: [{ highlight: 'Personalized care' }, ' for your hair and scalp'],
   productImage: '/assets/hairrepair/hairs.jpeg',
   checklistCaption: 'Personalized Hair Support',
   checklist: [
     'Targeted scalp and follicle support',
-    'Long-term hair density approach',
+    'Long-term hair care approach',
     'Fast shipping',
   ],
   collageImages: [
-    { src: '/assets/hairrepair/menwithhair.jpeg', alt: 'AUM Health hair restoration patient' },
-    { src: 'https://images.unsplash.com/photo-1619218533116-f050e7d91d91?q=80&w=400&auto=format&fit=crop', alt: 'AUM Health hair restoration lifestyle photo' },
+    { src: '/assets/hairrepair/menwithhair.jpeg', alt: 'AUM Health hair care patient' },
+    { src: 'https://images.unsplash.com/photo-1619218533116-f050e7d91d91?q=80&w=400&auto=format&fit=crop', alt: 'AUM Health hair care lifestyle photo' },
   ],
-  secondaryHeading: 'Advanced hair regrowth care to help you look and feel your best',
+  secondaryHeading: 'Hair care to help you look and feel your best',
   secondaryBody:
-    'Revitalize your roots and restore fuller-looking hair with our hair regrowth serum, formulated to nourish the scalp and support healthier strands.',
+    'Our hair serum is formulated to nourish the scalp and support healthier-looking hair.',
   cta: { label: 'Get Started', href: 'https://app.aumhealth.io/programs/e66e4f22-3903-4e6f-8511-431ac36787b2' },
 };
 
@@ -372,7 +372,7 @@ export const testimonials = {
 export const guaranteeStrip = {
   items: [
     { label: 'Free, expedited delivery', icon: 'truck' },
-    { label: 'Doctor-led plans & coaching', icon: 'stethoscope' },
+    { label: 'Doctor-led plans', icon: 'stethoscope' },
     { label: 'No hidden fees', icon: 'dollar' },
   ],
 };
@@ -410,6 +410,16 @@ export const removedForLegitScript = {
       'Revitalize your roots and restore fuller-looking hair with our powerful hair regrowth serum, formulated to nourish the scalp and support visibly thicker, healthier strands.',
   },
   guaranteeStripItem: { label: 'AUM Health Guarantee', icon: 'badge' }, // was first item of guaranteeStrip.items
+  guaranteeStripCoachingLabel: 'Doctor-led plans & coaching', // now 'Doctor-led plans'; restore once coaching is offered
+  hairSectionSoftened: { // second pass; the live hairSection now uses softer wording
+    eyebrow: 'Targeted Hair Restoration',
+    headingParts: [{ highlight: 'Personalized care' }, ' for thinning hair and regrowth'],
+    checklistItem: 'Long-term hair density approach',
+    imageAlts: ['AUM Health hair restoration patient', 'AUM Health hair restoration lifestyle photo'],
+    secondaryHeading: 'Advanced hair regrowth care to help you look and feel your best',
+    secondaryBody:
+      'Revitalize your roots and restore fuller-looking hair with our hair regrowth serum, formulated to nourish the scalp and support healthier strands.',
+  },
 };
 
 export const footer = {
