@@ -62,19 +62,14 @@ export const glpSection = {
   headingParts: ['Weight loss ', { highlight: 'made easy' }, ' with personalized care'],
   productImage: '/assets/weightlosssection/weight-loss-vial.jpeg',
   checklistCaption: 'Everything you need  included:',
-  checklist: [
-    '1:1 physician guidance',
-    'Free dietician visits & care coaching included*',
-    '24/7 support',
-    'Fast & discreet shipping',
-  ],
+  checklist: ['Online provider visit', 'Fast & discreet shipping'],
   collageImages: [
     { src: '/assets/weightlosssection/weight-loss-1.jpeg', alt: 'AUM Health weight loss patient staying active at home' },
     { src: '/assets/weightlosssection/weight-loss-2.jpeg', alt: 'AUM Health weight loss patient living life on the go' },
   ],
   secondaryHeading: 'A smarter approach to weight loss, built around you',
   secondaryBody:
-    'Find the right GLP-1 medication with the confidence that comes from knowing it is doctor-approved.',
+    'Find the right GLP-1 medication with the confidence that comes from care reviewed by a licensed provider.',
   cta: { label: 'Get Started', href: '#get-started' },
   pricingCards: [
     {
@@ -83,7 +78,7 @@ export const glpSection = {
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight-loss-vial.jpeg',
       description: '',
-      checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
+      checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
       cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' }, // TODO: client to provide Semaglutide checkout link
     },
     {
@@ -92,7 +87,7 @@ export const glpSection = {
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight.jpeg',
       description: '',
-      checklist: ['Online Provider Visit', 'Prescription Included', 'Discreet Home Delivery', 'Ongoing Support'],
+      checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
       cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' }, // TODO: client to provide Tirzepatide checkout link
     },
   ],
@@ -101,11 +96,6 @@ export const glpSection = {
       title: 'Everything, all in one place',
       body: 'Track your progress, check in with your provider, and manage your care in your all-in-one patient portal.',
       image: '/assets/glp/portal-app-photo.svg',
-    },
-    {
-      title: 'Unlimited 24/7 support',
-      body: 'Medical support continues throughout your care, whenever you need it.',
-      image: 'https://images.unsplash.com/photo-1766066014237-00645c74e9c6?q=80&w=200&auto=format&fit=crop',
     },
   ],
   disclaimer:
@@ -190,18 +180,18 @@ export const sexualHealthSection = {
 export const mensHealthSection = {
   id: 'mens-health',
   tint: 'mens-health',
-  eyebrow: 'Care for Energy, Hormones & Performance',
+  eyebrow: 'Care for Energy & Everyday Wellness',
   headingParts: ["Men's healthcare, built for men who ", { highlight: 'expect more' }],
-  
+
   checklistCaption: 'Benefits that make a difference',
-  checklist: ['Physical performance', 'Hormone balance', 'Energy levels', 'Mental focus', 'Fast & discreet shipping'],
+  checklist: ['Energy levels', 'Mental focus', 'Fast & discreet shipping'],
   collageImages: [
     { src: '/assets/menhealth/mens-health-1.jpeg', alt: "AUM Health men's health lifestyle photo" },
     { src: '/assets/menhealth/mens-health-2.jpeg', alt: "AUM Health men's health lifestyle photo" },
   ],
-  secondaryHeading: 'Care designed to help you feel stronger, sharper, and more in control',
+  secondaryHeading: 'Care designed to help you feel sharper and more in control',
   secondaryBody:
-    'Doctor-guided care for hormones, energy, and performance, with treatment plans tailored to your goals and adjusted as your body responds.',
+    'Doctor-guided care for energy and focus, with treatment plans tailored to your goals and adjusted as your body responds.',
   cta: { label: 'Get Started', href: 'https://app.aumhealth.io/programs/e4648819-318d-4214-83b5-d69b3cfe83cb' },
 };
 
@@ -269,11 +259,10 @@ export const hairSection = {
   id: 'hair',
   tint: 'hair',
   eyebrow: 'Targeted Hair Restoration',
-  headingParts: [{ highlight: 'Proven care' }, ' for thinning hair and regrowth'],
+  headingParts: [{ highlight: 'Personalized care' }, ' for thinning hair and regrowth'],
   productImage: '/assets/hairrepair/hairs.jpeg',
-  checklistCaption: 'Personalized Support for Lasting Hair Results',
+  checklistCaption: 'Personalized Hair Support',
   checklist: [
-    'Clinically backed regrowth ingredients',
     'Targeted scalp and follicle support',
     'Long-term hair density approach',
     'Fast shipping',
@@ -284,7 +273,7 @@ export const hairSection = {
   ],
   secondaryHeading: 'Advanced hair regrowth care to help you look and feel your best',
   secondaryBody:
-    'Revitalize your roots and restore fuller-looking hair with our powerful hair regrowth serum, formulated to nourish the scalp and support visibly thicker, healthier strands.',
+    'Revitalize your roots and restore fuller-looking hair with our hair regrowth serum, formulated to nourish the scalp and support healthier strands.',
   cta: { label: 'Get Started', href: 'https://app.aumhealth.io/programs/e66e4f22-3903-4e6f-8511-431ac36787b2' },
 };
 
@@ -382,11 +371,45 @@ export const testimonials = {
 
 export const guaranteeStrip = {
   items: [
-    { label: 'AUM Health Guarantee', icon: 'badge' },
     { label: 'Free, expedited delivery', icon: 'truck' },
     { label: 'Doctor-led plans & coaching', icon: 'stethoscope' },
     { label: 'No hidden fees', icon: 'dollar' },
   ],
+};
+
+// Copy pulled for LegitScript approval. Kept so it can be restored (or reworded) later.
+// Nothing here is rendered; "was in" says where each piece used to live.
+export const removedForLegitScript = {
+  glpSection: {
+    checklist: [ // was glpSection.checklist (replaced by 'Online provider visit', 'Fast & discreet shipping')
+      '1:1 physician guidance',
+      'Free dietician visits & care coaching included*',
+      '24/7 support',
+      'Fast & discreet shipping',
+    ],
+    secondaryBody: 'Find the right GLP-1 medication with the confidence that comes from knowing it is doctor-approved.',
+    pricingCardChecklistItem: 'Prescription Included', // now 'Prescription, if appropriate' on both cards
+    feature: { // was the 2nd entry of glpSection.features
+      title: 'Unlimited 24/7 support',
+      body: 'Medical support continues throughout your care, whenever you need it.',
+      image: 'https://images.unsplash.com/photo-1766066014237-00645c74e9c6?q=80&w=200&auto=format&fit=crop',
+    },
+  },
+  mensHealthSection: {
+    eyebrow: 'Care for Energy, Hormones & Performance',
+    checklist: ['Physical performance', 'Hormone balance', 'Energy levels', 'Mental focus', 'Fast & discreet shipping'],
+    secondaryHeading: 'Care designed to help you feel stronger, sharper, and more in control',
+    secondaryBody:
+      'Doctor-guided care for hormones, energy, and performance, with treatment plans tailored to your goals and adjusted as your body responds.',
+  },
+  hairSection: {
+    headingParts: [{ highlight: 'Proven care' }, ' for thinning hair and regrowth'],
+    checklistCaption: 'Personalized Support for Lasting Hair Results',
+    checklistItem: 'Clinically backed regrowth ingredients', // was first item of hairSection.checklist
+    secondaryBody:
+      'Revitalize your roots and restore fuller-looking hair with our powerful hair regrowth serum, formulated to nourish the scalp and support visibly thicker, healthier strands.',
+  },
+  guaranteeStripItem: { label: 'AUM Health Guarantee', icon: 'badge' }, // was first item of guaranteeStrip.items
 };
 
 export const footer = {

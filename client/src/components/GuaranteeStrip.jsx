@@ -17,7 +17,7 @@ const Inner = styled(motion.create(Container))`
   text-align: center;
 
   @media (min-width: 700px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(${guaranteeStrip.items.length}, 1fr);
   }
 `;
 
@@ -32,7 +32,7 @@ const Item = styled.div`
   justify-content: center;
   gap: 0.6rem;
   font-weight: 700;
-  color: ${(props) => (props.$first ? 'var(--color-gold-accent)' : 'var(--color-navy-800)')};
+  color: var(--color-navy-800);
   padding: var(--space-1) 0;
   min-width: 0;
 
@@ -49,9 +49,9 @@ export default function GuaranteeStrip() {
   return (
     <Strip>
       <Inner initial="hidden" whileInView="show" viewport={{ once: true, margin: '-80px' }} variants={innerVariants}>
-        {guaranteeStrip.items.map((item, i) => (
+        {guaranteeStrip.items.map((item) => (
           <StaggerItem key={item.label}>
-            <Item $first={i === 0}>
+            <Item>
               <Icon name={item.icon} size={20} />
               {item.label}
             </Item>

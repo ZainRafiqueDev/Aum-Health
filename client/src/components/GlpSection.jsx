@@ -12,6 +12,10 @@ const FeaturesGrid = styled(motion.create(Container))`
 
   @media (min-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
+
+    & > :only-child {
+      grid-column: 1 / -1;
+    }
   }
 `;
 
