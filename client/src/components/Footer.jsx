@@ -73,10 +73,10 @@ export default function Footer() {
 
         {footer.legalEntity && (
           <StatesNotice>
-            {footer.legalEntity}
+            AUM Health is operated by {footer.legalEntity}
             {footer.partners?.length > 0 && (
               <>
-                {' '}in partnership with{' '}
+                , in partnership with{' '}
                 {footer.partners.map((partner, i) => (
                   <span key={partner.label}>
                     <a href={partner.href} target="_blank" rel="noopener noreferrer">

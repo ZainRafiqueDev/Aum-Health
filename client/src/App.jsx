@@ -4,11 +4,11 @@ import BadgeStrip from './components/BadgeStrip.jsx';
 import GlpSection from './components/GlpSection.jsx';
 import FeatureSection from './components/FeatureSection.jsx';
 import MedicalDisclaimerSection from './components/MedicalDisclaimerSection.jsx';
+import FaqSection from './components/FaqSection.jsx';
 import GuaranteeStrip from './components/GuaranteeStrip.jsx';
 import Footer from './components/Footer.jsx';
 import {
   mensHealthSection,
-  hairSection,
 } from './content/site-content.js';
 
 export default function App() {
@@ -25,9 +25,10 @@ export default function App() {
         <FeatureSection {...mensHealthSection} collageAspect="16 / 9" />
         {/* Peptides & Longevity section temporarily removed per client request (content saved as peptidesSection in site-content.js) */}
         {/* Women's Health section temporarily removed per client request */}
-        <FeatureSection {...hairSection} />
+        {/* Hair section temporarily removed per client request (content saved as hairSection in site-content.js) */}
         {/* Skincare section temporarily removed per client request */}
         {/* Testimonials section temporarily removed per client request */}
+        <FaqSection />
         <GuaranteeStrip />
       </main>
       <Footer />
