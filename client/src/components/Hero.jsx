@@ -59,18 +59,21 @@ const Subhead = styled.p`
   line-height: 1.6;
 `;
 
-// The single shared white panel all 3 cards live inside.
+// Panel width follows the card count: ~260px per card, capped at 800px.
+const panelWidth = (count) => (count >= 3 ? 800 : 560);
+
+// The single shared white panel all the cards live inside.
 const CardPanel = styled(motion.div)`
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: ${(props) => panelWidth(props.$count)}px;
   margin: ${-OVERLAP}px var(--space-4) 0;
   padding: 18px;
   background: #fff;
   border-radius: 24px;
   box-shadow: var(--shadow-card);
 
-  @media (min-width: 864px) {
+  @media (min-width: ${(props) => panelWidth(props.$count) + 64}px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -90,7 +93,7 @@ const CardsGrid = styled(motion.div)`
   }
 
   @media (min-width: 700px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(${(props) => props.$count}, 1fr);
 
     & > :last-child:nth-child(odd) {
       grid-column: auto;
@@ -171,11 +174,12 @@ export default function Hero() {
 
       <CardPanel
         id="get-started"
+        $count={hero.categories.length}
         initial={{ opacity: 0, y: 36, scale: 0.97 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
       >
-        <CardsGrid initial="hidden" animate="show" variants={{ show: { transition: { staggerChildren: 0.08, delayChildren: 0.55 } } }}>
+        <CardsGrid $count={hero.categories.length} initial="hidden" animate="show" variants={{ show: { transition: { staggerChildren: 0.08, delayChildren: 0.55 } } }}>
           {hero.categories.map((cat) => (
             <CategoryItem
               key={cat.key}
