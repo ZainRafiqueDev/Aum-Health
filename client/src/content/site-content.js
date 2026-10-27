@@ -29,7 +29,7 @@ export const hero = {
       label: 'Weight Loss',
       style: 'photo',
       tint: '#e3f2e8',
-      image: '/assets/weightlosssection/weight.jpeg',
+      image: '/assets/weightlosssection/w1.jpeg',
     },
     {
       key: 'mens-health',
