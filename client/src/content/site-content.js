@@ -54,7 +54,7 @@ export const glpSection = {
   headingParts: ['Weight loss ', { highlight: 'support' }, ' with personalized care'], // was 'made easy'
   productImage: '/assets/weightlosssection/weight-loss-vial.jpeg',
   checklistCaption: 'Everything you need  included:',
-  checklist: ['Online provider visit', 'Fast & discreet shipping'],
+  checklist: ['Online care', 'Fast & discreet shipping'], // was 'Online provider visit'
   collageImages: [
     { src: '/assets/weightlosssection/weight-loss-1.jpeg', alt: 'AUM Health weight loss patient staying active at home' },
     { src: '/assets/weightlosssection/weight-loss-2.jpeg', alt: 'AUM Health weight loss patient living life on the go' },
@@ -91,7 +91,7 @@ export const glpSection = {
     },
   ],
   disclaimer:
-    'Prescriptions are issued only after an online consultation with an independent licensed provider. Compound medications are dispensed by state-licensed pharmacies but are not FDA approved.',
+    'Prescriptions are issued only after an online consultation with an independent licensed provider. Some states require a live visit. Compound medications are dispensed by state-licensed pharmacies but are not FDA approved.',
 };
 
 export const supplementSection = {
