@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { glpSection } from '../content/site-content.js';
 import RichHeading from './RichHeading.jsx';
 import { Section, Container, Eyebrow, SectionHeading, Checklist, ChecklistItem, CheckIcon, Btn } from '../styles/primitives.js';
-import { FeatureGrid, Aside, ProductWrap, ProductImage, ChecklistCaption, Main, Collage, CollageImg, Closing } from './FeatureLayout.js';
+import { FeatureGrid, Aside, ChecklistCaption, Main, Collage, CollageImg, Closing } from './FeatureLayout.js';
 import { motion, Reveal, ZoomIn, StaggerItem, hoverLift } from './motion/Reveal.jsx';
 
 const FeaturesGrid = styled(motion.create(Container))`
@@ -95,23 +95,8 @@ const PricingPrice = styled.p`
   }
 `;
 
-const PricingBody = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-2);
-  margin-bottom: var(--space-2);
-`;
-
-const PricingImage = styled.img.attrs({ loading: 'lazy', decoding: 'async' })`
-  flex: 0 0 auto;
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-`;
-
 const PricingDescription = styled.p`
-  margin: 0;
+  margin: 0 0 var(--space-2);
   font-size: var(--fs-small);
   color: var(--color-text-muted);
 `;
@@ -141,12 +126,7 @@ export default function GlpSection() {
       <Container>
         <FeatureGrid>
           <Aside>
-            <ZoomIn>
-              <ProductWrap>
-                <ProductImage src={glpSection.productImage} alt="" />
-              </ProductWrap>
-            </ZoomIn>
-
+            {/* Product (vial) photo removed per client request; glpSection.productImage kept in site-content.js */}
             <Reveal delay={0.15}>
               <ChecklistCaption>{glpSection.checklistCaption}</ChecklistCaption>
               <Checklist>
@@ -194,12 +174,10 @@ export default function GlpSection() {
                         <PricingPrice>
                           {card.price} <span>{card.priceNote}</span>
                         </PricingPrice>
-                        <PricingBody>
-                          <PricingImage src={card.image} alt="" />
-                          {card.description && (
-                            <PricingDescription>{card.description}</PricingDescription>
-                          )}
-                        </PricingBody>
+                        {/* Vial thumbnail removed per client request; card.image kept in site-content.js */}
+                        {card.description && (
+                          <PricingDescription>{card.description}</PricingDescription>
+                        )}
                         <PricingDivider />
                         <PricingChecklist>
                           {card.checklist.map((item) => (

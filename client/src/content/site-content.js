@@ -10,7 +10,7 @@ export const nav = {
     { label: 'Weight Loss', href: '/#weight-loss' },
     { label: 'Supplements', href: '/#supplements' },
     { label: "Men's Health", href: '/#mens-health' },
-    { label: 'Hair Serum', href: '/#hair' },
+    { label: 'FAQs', href: '/#faq' },
   ],
   popupFooterLinks: [
     { label: 'Contact Support', href: '/#contact' },
@@ -39,18 +39,10 @@ export const hero = {
       tint: '#efe6d8',
       image: '/assets/menhealth/hman.jpeg',
     },
-    {
-      key: 'hair',
-      href: '#hair',
-      label: 'Hair Serum',
-      style: 'photo',
-      tint: '#faf3e6',
-      image: '/assets/hairrepair/hairs.jpeg',
-    },
   ],
   badges: [
     { label: 'Licensed Medical Providers', icon: 'stethoscope' },
-    { label: '100% Online', icon: 'cursor' },
+    { label: 'Online care', icon: 'cursor' }, // was '100% Online' (some states require a live visit)
     { label: 'Clear Pricing', icon: 'dollar' },
     { label: 'Shipped to Your Door', icon: 'truck' },
   ],
@@ -59,7 +51,7 @@ export const hero = {
 export const glpSection = {
   id: 'weight-loss',
   eyebrow: 'Doctor-Guided GLP-1 Care',
-  headingParts: ['Weight loss ', { highlight: 'made easy' }, ' with personalized care'],
+  headingParts: ['Weight loss ', { highlight: 'support' }, ' with personalized care'], // was 'made easy'
   productImage: '/assets/weightlosssection/weight-loss-vial.jpeg',
   checklistCaption: 'Everything you need  included:',
   checklist: ['Online provider visit', 'Fast & discreet shipping'],
@@ -255,6 +247,18 @@ export const womensHealthSection = {
   comingSoon: true, 
 };
 
+// Hair is paused (see App.jsx). hairSection below plus these two are everything needed to restore it.
+export const hairNavLink = { label: 'Hair Serum', href: '/#hair' }; // was in nav.popupLinks, last item
+
+export const hairHeroCategory = {
+  key: 'hair',
+  href: '#hair',
+  label: 'Hair Serum',
+  style: 'photo',
+  tint: '#faf3e6',
+  image: '/assets/hairrepair/hairs.jpeg',
+}; // was in hero.categories, last item
+
 export const hairSection = {
   id: 'hair',
   tint: 'hair',
@@ -365,6 +369,48 @@ export const testimonials = {
       name: 'Olivia',
       role: 'AUM Health Patient',
       photo: 'https://images.unsplash.com/photo-1615751596346-9df8006e5381?q=80&w=400&auto=format&fit=crop',
+    },
+  ],
+};
+
+// FAQ answers are drawn from the site's existing disclaimers/footer. Keep NAD out of this list (client request).
+export const faqSection = {
+  id: 'faq',
+  heading: 'Frequently Asked Questions',
+  items: [
+    {
+      question: 'What is AUM Health?',
+      answer:
+        'AUMhealth is a concierge telehealth platform that connects you with independent, licensed healthcare providers. AUMhealth does not itself provide medical care, make treatment decisions, write prescriptions, or dispense medications.',
+    },
+    {
+      question: 'How does it work?',
+      answer:
+        'Choose your treatment and complete a medical intake. An independent licensed provider reviews it and, if a prescription is medically appropriate, it is sent to a partner pharmacy that ships it to you. Some states require a live visit with a provider, and your provider may request one.',
+    },
+    {
+      question: 'Is a prescription guaranteed?',
+      answer:
+        'No. A prescription is issued only if an independent licensed provider determines it is medically appropriate for you after reviewing your information. Starting a program does not guarantee a prescription.',
+    },
+    {
+      question: 'What are compounded medications?',
+      answer:
+        'Compounded medications are individually prepared prescription medications made by licensed compounding pharmacies. They are not FDA-approved, and the FDA does not review them for safety, effectiveness, or quality before they are marketed. A provider may prescribe one only when it is medically appropriate for you and permitted by applicable law.',
+    },
+    {
+      question: 'Is insurance required?',
+      answer:
+        'No. AUMhealth programs are self-pay and insurance is not billed. Current pricing is shown on each program.',
+    },
+    {
+      question: 'Where is AUM Health available?',
+      answer:
+        'We serve patients in 46 states. We do not currently provide services in Alaska, Mississippi, New Jersey or Texas.',
+    },
+    {
+      question: 'How do I contact support?',
+      answer: 'Email help@AUMhealth.io or call +1 954 271 5250 and our team will help.',
     },
   ],
 };
