@@ -60,7 +60,7 @@ const Subhead = styled.p`
 `;
 
 // Panel width follows the card count: ~260px per card, capped at 800px.
-const panelWidth = (count) => (count >= 3 ? 800 : 560);
+const panelWidth = (count) => (count >= 3 ? 800 : count === 2 ? 560 : 320);
 
 // The single shared white panel all the cards live inside.
 const CardPanel = styled(motion.div)`
@@ -90,6 +90,11 @@ const CardsGrid = styled(motion.div)`
     grid-column: 1 / -1;
     justify-self: center;
     width: calc(50% - 5px);
+  }
+
+  /* A lone card fills the narrow panel on mobile too. */
+  & > :last-child:nth-child(odd):first-child {
+    width: 100%;
   }
 
   @media (min-width: 700px) {

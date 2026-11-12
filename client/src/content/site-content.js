@@ -9,7 +9,6 @@ export const nav = {
   popupLinks: [
     { label: 'Weight Loss', href: '/#weight-loss' },
     { label: 'Supplements', href: '/#supplements' },
-    { label: "Men's Health", href: '/#mens-health' },
     { label: 'FAQs', href: '/#faq' },
   ],
   popupFooterLinks: [
@@ -30,14 +29,6 @@ export const hero = {
       style: 'photo',
       tint: '#e3f2e8',
       image: '/assets/weightlosssection/w1.jpeg',
-    },
-    {
-      key: 'mens-health',
-      href: '#mens-health',
-      label: "Men's Health",
-      style: 'photo',
-      tint: '#efe6d8',
-      image: '/assets/menhealth/hman.jpeg',
     },
   ],
   badges: [
@@ -65,22 +56,22 @@ export const glpSection = {
   cta: { label: 'Get Started', href: '#get-started' },
   pricingCards: [
     {
-      title: 'Compounded Semaglutide',
-      price: '$199',
+      title: 'Wegovy®', // was 'Compounded Semaglutide' (see removedCompoundedCards)
+      price: '$199', // pricing kept as-is per client for now
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight-loss-vial.jpeg',
       description: '',
       checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
-      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' }, // TODO: client to provide Semaglutide checkout link
+      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' }, // TODO: this is still the old compounded semaglutide program link; client to provide the Wegovy checkout link
     },
     {
-      title: 'Compounded Tirzepatide',
-      price: '$233',
+      title: 'Zepbound®', // was 'Compounded Tirzepatide' (see removedCompoundedCards)
+      price: '$233', // pricing kept as-is per client for now
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight.jpeg',
       description: '',
       checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
-      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' }, // TODO: client to provide Tirzepatide checkout link
+      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' }, // TODO: this is still the old compounded tirzepatide program link; client to provide the Zepbound checkout link
     },
   ],
   features: [
@@ -168,6 +159,40 @@ export const sexualHealthSection = {
     'Licensed providers offer judgment-free consultations and treatment options tailored to your needs, delivered discreetly to your door.',
   cta: { label: 'Get Started', href: '#get-started' },
 };
+
+// Men's Health is paused (see App.jsx). mensHealthSection below plus these two are everything needed to restore it.
+export const mensHealthNavLink = { label: "Men's Health", href: '/#mens-health' }; // was in nav.popupLinks, after Supplements
+
+export const mensHealthHeroCategory = {
+  key: 'mens-health',
+  href: '#mens-health',
+  label: "Men's Health",
+  style: 'photo',
+  tint: '#efe6d8',
+  image: '/assets/menhealth/hman.jpeg',
+}; // was in hero.categories, after Weight Loss
+
+// The two compounded GLP-1 pricing cards, replaced by Wegovy / Zepbound (glpSection.pricingCards).
+export const removedCompoundedCards = [
+  {
+    title: 'Compounded Semaglutide',
+    price: '$199',
+    priceNote: '/ month*',
+    image: '/assets/weightlosssection/weight-loss-vial.jpeg',
+    description: '',
+    checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
+    cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' },
+  },
+  {
+    title: 'Compounded Tirzepatide',
+    price: '$233',
+    priceNote: '/ month*',
+    image: '/assets/weightlosssection/weight.jpeg',
+    description: '',
+    checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
+    cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' },
+  },
+];
 
 export const mensHealthSection = {
   id: 'mens-health',
