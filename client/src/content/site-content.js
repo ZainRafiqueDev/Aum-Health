@@ -508,6 +508,7 @@ export const footer = {
   statesNotOperationalNotice:
     'We serve patients in 46 states. We do not currently provide services in Alaska, Mississippi, New Jersey or Texas.',
   legalEntity: 'QH Token, Inc.',
+  legalEntityAddress: '30 N. Gould St Ste 4000, Sheridan, WY 82801',
   partners: [
     { label: 'Beluga Health', href: 'https://www.belugahealth.com' },
     { label: 'The Pharmacy Hub', href: 'https://pharmacyhub.com/' },
