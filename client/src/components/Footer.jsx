@@ -74,6 +74,7 @@ export default function Footer() {
         {footer.legalEntity && (
           <StatesNotice>
             AUM Health is operated by {footer.legalEntity}
+            {footer.legalEntityAddress && <>, {footer.legalEntityAddress}</>}
             {footer.partners?.length > 0 && (
               <>
                 , in partnership with{' '}
