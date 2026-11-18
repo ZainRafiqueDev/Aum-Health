@@ -83,8 +83,9 @@ const PricingTitle = styled.h4`
 `;
 
 const SafetyLink = styled.a`
-  display: inline-block;
-  margin: 0 0 var(--space-2);
+  display: block;
+  margin: var(--space-2) 0 0;
+  text-align: center;
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--color-navy-900);
@@ -185,11 +186,6 @@ export default function GlpSection() {
                         whileTap={{ scale: 0.98 }}
                       >
                         <PricingTitle>{card.title}</PricingTitle>
-                        {card.safetyLink && (
-                          <SafetyLink href={card.safetyLink.href} target="_blank" rel="noopener noreferrer">
-                            {card.safetyLink.label}
-                          </SafetyLink>
-                        )}
                         <PricingPrice>
                           {card.price} <span>{card.priceNote}</span>
                         </PricingPrice>
@@ -207,6 +203,11 @@ export default function GlpSection() {
                           ))}
                         </PricingChecklist>
                         <PricingBtn href={card.cta.href}>{card.cta.label}</PricingBtn>
+                        {card.safetyLink && (
+                          <SafetyLink href={card.safetyLink.href} target="_blank" rel="noopener noreferrer">
+                            {card.safetyLink.label}
+                          </SafetyLink>
+                        )}
                       </PricingCard>
                     ))}
                   </PricingGrid>
