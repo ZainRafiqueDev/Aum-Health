@@ -445,7 +445,7 @@ export const faqSection = {
 export const guaranteeStrip = {
   items: [
     { label: 'Free, expedited delivery', icon: 'truck' },
-    { label: 'Doctor-led plans', icon: 'stethoscope' },
+    { label: 'Provider-led plan', icon: 'stethoscope' },
     { label: 'No hidden fees', icon: 'dollar' },
   ],
 };
