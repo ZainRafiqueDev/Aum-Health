@@ -71,7 +71,7 @@ export const glpSection = {
       image: '/assets/weightlosssection/weight.jpeg',
       description: '',
       checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
-      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/ace215b5-0232-45c6-b22f-39bd059a48e5' }, // TODO: this is still the old compounded tirzepatide program link; client to provide the Zepbound checkout link
+      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/f51225ca-accf-4ca1-b224-6baef02651b3' },
     },
   ],
   features: [
