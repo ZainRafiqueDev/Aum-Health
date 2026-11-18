@@ -84,7 +84,7 @@ export const glpSection = {
     },
   ],
   disclaimer:
-    'Prescriptions are issued only after an online consultation with an independent licensed provider. Some states require a live visit. Compound medications are dispensed by state-licensed pharmacies but are not FDA approved.',
+    'Prescriptions are issued only after an online consultation with an independent licensed provider. Some states require a live visit. Prescribed medications are dispensed by The Pharmacy Hub, a state-licensed pharmacy.',
 };
 
 export const supplementSection = {
