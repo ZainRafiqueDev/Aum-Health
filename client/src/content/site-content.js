@@ -57,6 +57,7 @@ export const glpSection = {
   pricingCards: [
     {
       title: 'Wegovy®', // was 'Compounded Semaglutide' (see removedCompoundedCards)
+      safetyLink: { label: 'View Important Safety Information', href: 'https://www.novo-pi.com/wegovy.pdf' },
       price: '$320', // pricing kept as-is per client for now
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight-loss-vial.jpeg',
@@ -66,6 +67,7 @@ export const glpSection = {
     },
     {
       title: 'Zepbound®', // was 'Compounded Tirzepatide' (see removedCompoundedCards)
+      safetyLink: { label: 'View Important Safety Information', href: 'https://uspl.lilly.com/zepbound/zepbound.html' },
       price: '$425', // pricing kept as-is per client for now
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight.jpeg',

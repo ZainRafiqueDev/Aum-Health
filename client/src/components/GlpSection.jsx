@@ -82,6 +82,20 @@ const PricingTitle = styled.h4`
   margin: 0 0 var(--space-1);
 `;
 
+const SafetyLink = styled.a`
+  display: inline-block;
+  margin: 0 0 var(--space-2);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-navy-900);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover {
+    opacity: 0.75;
+  }
+`;
+
 const PricingPrice = styled.p`
   margin: 0 0 var(--space-2);
   font-size: 1.75rem;
@@ -171,6 +185,11 @@ export default function GlpSection() {
                         whileTap={{ scale: 0.98 }}
                       >
                         <PricingTitle>{card.title}</PricingTitle>
+                        {card.safetyLink && (
+                          <SafetyLink href={card.safetyLink.href} target="_blank" rel="noopener noreferrer">
+                            {card.safetyLink.label}
+                          </SafetyLink>
+                        )}
                         <PricingPrice>
                           {card.price} <span>{card.priceNote}</span>
                         </PricingPrice>
