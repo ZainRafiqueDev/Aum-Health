@@ -134,7 +134,7 @@ export const medicalDisclaimerSection = {
     },
     {
       heading: 'Clinical Partners',
-      body: 'AUMhealth facilitates access to healthcare services through independent third-party partners, including Beluga Health for clinical care, The Pharmacy Hub and its affiliated pharmacy partners for prescription fulfillment, and independent laboratory partners for diagnostic testing. These organizations operate independently and are responsible for the healthcare, pharmacy, laboratory, and other clinical services they provide.',
+      body: 'AUMhealth facilitates access to healthcare services through independent third-party partners, including Beluga Health for clinical care, The Pharmacy Hub for prescription fulfillment, and independent laboratory partners for diagnostic testing. These organizations operate independently and are responsible for the healthcare, pharmacy, laboratory, and other clinical services they provide.',
     },
   ],
 };
