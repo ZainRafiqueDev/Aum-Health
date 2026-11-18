@@ -62,7 +62,7 @@ export const glpSection = {
       image: '/assets/weightlosssection/weight-loss-vial.jpeg',
       description: '',
       checklist: ['Online Provider Visit', 'Prescription, if appropriate', 'Discreet Home Delivery', 'Ongoing Support'],
-      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/a6a02cb4-c2de-44d4-8184-571b2e22eb1e' }, // TODO: this is still the old compounded semaglutide program link; client to provide the Wegovy checkout link
+      cta: { label: 'Get Started Today', href: 'https://app.aumhealth.io/programs/4f55a00e-23a1-4a8b-836f-80e050b8249d' }, // TODO: this is still the old compounded semaglutide program link; client to provide the Wegovy checkout link
     },
     {
       title: 'Zepbound®', // was 'Compounded Tirzepatide' (see removedCompoundedCards)
