@@ -57,7 +57,7 @@ export const glpSection = {
   pricingCards: [
     {
       title: 'Wegovy®', // was 'Compounded Semaglutide' (see removedCompoundedCards)
-      price: '$199', // pricing kept as-is per client for now
+      price: '$320', // pricing kept as-is per client for now
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight-loss-vial.jpeg',
       description: '',
@@ -66,7 +66,7 @@ export const glpSection = {
     },
     {
       title: 'Zepbound®', // was 'Compounded Tirzepatide' (see removedCompoundedCards)
-      price: '$233', // pricing kept as-is per client for now
+      price: '$425', // pricing kept as-is per client for now
       priceNote: '/ month*',
       image: '/assets/weightlosssection/weight.jpeg',
       description: '',
