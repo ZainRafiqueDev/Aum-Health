@@ -41,7 +41,7 @@ export const hero = {
 
 export const glpSection = {
   id: 'weight-loss',
-  eyebrow: 'Doctor-Guided GLP-1 Care',
+  eyebrow: 'Provider-Guided GLP-1 Care',
   headingParts: ['Weight loss ', { highlight: 'support' }, ' with personalized care'], // was 'made easy'
   productImage: '/assets/weightlosssection/weight-loss-vial.jpeg',
   checklistCaption: 'Everything you need  included:',
